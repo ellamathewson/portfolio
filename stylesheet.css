@@ -249,6 +249,20 @@ p {
     .gallery {
         margin: 0 -10%; 
     }
+    .projectImg {
+        display: block;
+        margin: 5%;
+        max-width: 80%;
+    }
+    .projInfo {
+        float: left;
+        width: 80%;
+        margin: 0 10%;
+    }
+    #threePic {
+        margin-top: 5%;
+        width: 80%;
+    }
 /*
     .header, nav {
         width: 100%;
