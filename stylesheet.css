@@ -239,6 +239,10 @@ p {
         width: 80%;
         margin: 0 10%;
     }
+    #threePic {
+        margin-top: 5%;
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 0) and (max-width: 399px) {
