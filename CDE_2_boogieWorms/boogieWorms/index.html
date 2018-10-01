@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css" />
+
+    <!--Edit index.html to change the title.-->
+    <title>Boogie Worms</title>
+
+    <!--p5 libraries folder must be up one level from this html file-->
+    <script type="text/javascript" src="../libraries/p5.js"></script>
+    <script type="text/javascript" src="../libraries/p5.dom.js"></script>
+    <script type="text/javascript" src="../libraries/p5.collide.js"></script>
+    <script type="text/javascript" src="../libraries/p5.sound.js"></script>
+
+    <!--our own script should be in the same folder as this html file-->
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="CircObject.js"></script>
+    <script type="text/javascript" src="WormObject.js"></script>
+    <script type="text/javascript" src="StopwatchObject.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Popup window for winning -->
+    <div id="popupBgWin">
+        <div id="popupMainDivWin" onLoad="sw.stop()">
+            <div id="levelCleared">
+                <p>You Killed Disco!</p>
+            </div>
+            <div id="stats">
+                <p>Time: <span id="timeInsert"></span> s</p>
+                <br>
+                <p>Score: <span id="scoreInsert"></span> </p>
+                <br>
+                <p>Total Score: <span id="finalScoreInsert"></span> </p>
+                <br>                
+            </div>
+            <div id="closePopupDiv" title="Close this popup menu" onclick="closePopupMenuWin()">
+                <p>Next Level</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup window for losing -->
+    <div id="popupBgLose">
+        <div id="popupMainDivLose" onLoad="sw.stop()">
+            <div id="levelFail">
+                <p>Level Failed</p>
+            </div>
+            <div id="stats">
+                <p>Time: Not Fast Enough</p>
+                <br>
+                <p>Score: 0 </p>
+                <br>
+<!--                <p>Total Score: <span id="finalScoreInsert"></span> </p>-->
+            </div>
+            <div id="closePopupDiv" title="Close this popup menu" onclick="closePopupMenuLose()">
+                <p>Replay Level</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup window for the end of the game -->
+    <div id="popupBgEnd">
+        <div id="popupMainDivWin" onLoad="sw.stop()">
+            <div id="levelCleared">
+                <p>The boogie worms have been defeated!</p>
+            </div>
+            <div id="stats">
+                <p> You killed disco and stopped the boogie worms! Huzzah!
+                </p>
+                <br>
+            </div>
+            <div id="closePopupDiv" title="Close this popup menu" onclick="reset()">
+                <p>Main Menu</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
