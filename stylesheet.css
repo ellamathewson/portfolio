@@ -229,6 +229,16 @@ p {
         width: 95%;
         margin: 0 0.5%;
     }
+    .projectImg {
+        display: block;
+        margin: 5%;
+        max-width: 80%;
+    }
+    .projInfo {
+        float: left;
+        width: 80%;
+        margin: 0 10%;
+    }
 }
 
 @media screen and (min-width: 0) and (max-width: 399px) {
