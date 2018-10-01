@@ -1,10 +1,5 @@
 /*Ella Mathewson
-Updated: April 18th, 2018*/
-
-/*NOTE: SOME OF THIS CODE COULD BE BETTER APPLIED IN A MORE
-CONDENSED FASHION. THIS WEBSITE WAS MADE WITHIN A WEEK TO 
-MEET A DEADLINE, AND I APOLOGIZE FOR THE HASTE. IT WILL BE 
-FIXED AS SOON AS POSSIBLE.*/
+Updated: September 30th, 2018*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -100,12 +95,6 @@ hr {
     -ms-flex: 1 1 15%;
         flex: 1 1 15%;
 }
-
-#adjust1 {
-    /* padding-left: 20%; */
-    margin-left: -38%;
-}
-
 
 .gallery > div > img {
   display: block;
