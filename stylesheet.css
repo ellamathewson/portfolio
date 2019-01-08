@@ -21,7 +21,7 @@ Updated: October 4th, 2018*/
 /***
     For h1 and h2, sets font family, color, and spacing of letters. 
 ***/
-h1, h2 {
+h1 {
     font-family: 'Montserrat', sans-serif;
     color: black;
     margin-bottom: 10px;
@@ -66,6 +66,27 @@ a {
 a:hover {
     color: #008ED1;
     text-decoration: underline;
+}
+
+/*
+
+
+    Main page
+
+
+*/
+#name {
+    margin: 0 0;
+    width: 15%;
+    float: center;
+}
+
+h2 {
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 40px;
+    letter-spacing: 2.5px;
 }
 
 /***
