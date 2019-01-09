@@ -103,6 +103,10 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+#content{
+    position: absolute;
+    display: none;
+}
 
 #title {
     position: relative;
@@ -133,7 +137,7 @@ nav {
 }
 
 #logo {
-    display: none;
+    /* display: none; */
     justify-content: left;
     margin: -40vh 0 0 0;
     padding: 0;
@@ -141,24 +145,8 @@ nav {
     font-size: 40px;
 }
 
-/*
-
-    ANIMATION TRANSITIONS
-
-*/
-
-
-
-/***
-    CSS for name and nav bar at top of page. Used flexbox to help its display on the page 
-***/
-.header {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px;
-    text-align: center;
+#logo:hover {
+    cursor: pointer;
 }
 
 /***
@@ -175,122 +163,54 @@ hr {
     margin-bottom: 50px;
 }
 
-/****
-    *Content CSS* 
-    -- adapted from Oliver Knoblich on CodePen (https://codepen.io/oknoblich/pen/ELfzd) 
-*****/
+/*
 
-/*** 
-    Overall div for the entire gallery of photos of personal projects
-***/
-.gallery {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px;
 
-/*** 
-    Makes the glalery responsive to the window changing size
-***/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: none;
-  -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        max-width: 80%;
+    GALLERY
+
+
+*/
+.projNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-/*** 
-    Code for the divs inside the gallery, aka the images that are links to the projects
-***/
-.gallery > div {
-  position: relative;
-  float: left;
-  padding: 50px;
-
-/* Makes the divs change location (or space in between the divs) as the window changes */
-  -webkit-box-flex: 1;
-    -ms-flex: 1 1 15%;
-        flex: 1 1 15%;
+.projLink {
+    margin: 0 2vw;
 }
 
-/*** 
-    Sizing the logo images for the projects
-***/
-.gallery > div > img {
-  display: block;
-  width: 200px;
-  transition: .1s transform;
-  transform: translateZ(0); /* hack */
-
+.projLink:hover {
+    cursor: pointer;
 }
 
-/*** 
-    For hovering over the image
-***/
-.gallery > div:hover {
-  z-index: 1;
+.projectsGrid {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/*** 
-    When the mouse is over the image link, it increases its size to get the popup 
-    effect, showing that the image is a link
-***/
-.gallery > div:hover > a > img {
-  transform: scale(1.9,1.9);
-  transition: .3s transform;
-  cursor: pointer;
-  padding: 0 auto;
-  box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0);
-
-}
-
-/*** 
-    When the mouse leaves the image, this lets it transition slowly back down 
-    to the original image size
-***/
-.gallery > div > a > img {
-  transform: scale(1,1);
-  transition: .3s transform;
-  padding: 0 auto;
-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.75);
-
-}
-
-/*** 
-    Resets the gallery
-***/
-.cf:before, .cf:after {
-  display: block;
-  content: "";
-  line-height: 0;
-}
-
-.cf:after {
-  clear: both;
-}
-
-/***
-    Class for links that were imbedded into the images
-***/
-.click {
+.projImg {
     width: 200px;
-    display: block;
-    margin-left: 10px;
-    margin-right: 0;
-    padding: 0;
+    height: 200px;
+    margin: 1vh 1vw;
+    transition: all .2s ease-in-out;
+
 }
 
-/***
-    CSS for image that had a link imbedded into it
-***/
-.imgClick {
-    max-width: 100%;
-    padding: 0;
-    display: block;
+.projImg:hover {
+    transform: scale(1.2);
 }
 
 /******
+
+
     About Page
+
+
 ******/
 
 /***
@@ -303,7 +223,11 @@ box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.75);
 }
 
 /******
+
+
     Project Pages
+
+
 ******/
 
 /***

@@ -37,9 +37,9 @@ Updated: January 8th, 2019-->
             </div>
 
             <nav>
-                <a id="navZero" href="#projects">projects</a>
-                <a id="navOne" href="#about">about</a>
-                <a id="navTwo" href="#contact">contact</a>
+                <a id="navZero" class="mainNav" href="#projects">projects</a>
+                <a id="navOne" class="mainNav" href="#about">about</a>
+                <a id="navTwo" class="mainNav" href="#contact">contact</a>
             </nav>
 
         </div>
@@ -50,82 +50,55 @@ Updated: January 8th, 2019-->
         Project page
 
     -->
-    <div id="galleryPage">
-        <div class="gallery cf">
 
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_8_Tennis/DES_8.html">
-                    <img class="imgClick" src="logo/tennisLogo.png" alt="Tennis Club Poster">
-                </a>
-            </div>
+    <nav class="projNav">
+            <a class="projLink" id="allLink" onclick="filterProjects(this.id)">All</a>
+            <a class="projLink" id="designLink" onclick="filterProjects(this.id)">Design</a>
+            <a class="projLink" id="htmlLink" onclick="filterProjects(this.id)">Web</a>
+            <a class="projLink" id="jsLink" onclick="filterProjects(this.id)">JavaScript</a>
+    </nav>
 
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/CDE_2_boogieWorms/index.html">
-                    <img class="imgClick" src="logo/boogieLogo.png" alt="Boogie Worms">
-                </a>
-            </div>
-
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_4_WaterPoster1/DES_4.html">
-                    <img class="imgClick" src="logo/water1Logo.png" alt="Water Poster 1">
-                </a>
-            </div>
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_5_WaterPoster2/DES_5.html">
-                    <img class="imgClick" src="logo/water2Logo.png" alt="Water Poster 2">
-                </a>
-            </div>
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_6_WaterPoster3/DES_6.html">
-                    <img class="imgClick" src="logo/water3Logo.png" alt="Water Poster 3">
-                </a>
-            </div>
-
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/CDE_3_hueGrids/index.html">
-                    <img class="imgClick" src="logo/huegridLogo.png" alt="Hue Grid">
-                </a>
-            </div>
-
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_1_Alumni/DES_1.html">
-                    <img class="imgClick" src="logo/alumniLogo.png" alt="Alumni">
-                </a>
-            </div>
-
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_2_JC/DES_2.html">
-                    <img class="imgClick" src="logo/JCLogo.png" alt="JC Poster">
-                </a>
-            </div>
-
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/WEB_2_Wearbale/WEB_2.html">
-                    <img class="imgClick" src="logo/wearableLogo.png" alt="Wearable Devices Logo">
-                </a>
-            </div>
-
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_7_Typography/DES_7.html">
-                    <img class="imgClick" src="logo/typeLogo.png" alt="Typography">
-                </a>
-            </div>
-
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/CDE_1_penguinGame/index.html">
-                    <img class="imgClick" src="logo/penguinLogo.png" alt="Penguin Game">
-                </a>
-            </div>
-
-
-            <div>
-                <a class="click" href="https://ellamathewson.github.io/portfolio/WEB_1_Laurens/WEB_1.html">
-                    <img class="imgClick" src="logo/laurensLogo.png" alt="John Laurens">
-                </a>
-            </div>
-
-
+    <div class="projectsGrid">
+        <div class="countJS" id="js3">
+            <a href="#"><img class="projImg" src="media/seaProjectLogo.png" alt="Sea What You Did? Link"></a>
         </div>
+
+        <div class="countDesign" id="design5">
+            <a href="#"><img class="projImg" src="media/tennisLogo.png" alt="Tennis club poster link"></a>
+        </div>
+
+        <div class="countHTML" id="html2">
+            <a href="#"><img class="projImg" src="media/igmeLogo.png" alt="Class landing page for exercises link"></a>
+        </div>
+
+        <div class="countJS" id="js1">
+            <a href="#"><img class="projImg" src="media/boogieLogo.png" alt="Boogie Worms interactive game link"></a>
+        </div>
+
+        <div class="countJS" id="js2">
+            <a href="#"><img class="projImg" src="media/huegridLogo.png" alt="Hue grids project link"></a>
+        </div>
+
+        <div class="countDesign" id="design4">
+            <a href="#"><img class="projImg" src="media/water1Logo.png" alt="Water footprints poster link"></a>
+        </div>
+
+        <div class="countDesign" id="design3">
+            <a href="#"><img class="projImg" src="media/water2Logo.png" alt="Water cups poster link"></a>
+        </div>
+
+        <div class="countDesign" id="design2">
+            <a href="#.html"><img class="projImg" src="media/water3Logo.png" alt="Water foutain poster link"></a>
+        </div>
+
+        <div class="countDesign" id="design1">
+            <a href="#s.html"><img class="projImg" src="media/alumniLogo.png" alt="Alumni poster project link"></a>
+        </div>
+        <div class="countHTML" id="html1">
+            <a href="#l"><img class="projImg" src="media/wearableLogo.png" alt="Wearable devices website link"></a>
+        </div>
+
+
     </div>
 
 </body>
@@ -145,16 +118,30 @@ Updated: January 8th, 2019-->
     });
 
 
+
     /* animation for nav links */
-    $('a').mouseenter(function (event) {
+    $('.mainNav').mouseenter(function (event) {
         $(this).addClass('animated swing fast');
     });
 
     /* Frédéric Hamidi gave the solution to triggering this code once the animation is over.  
     https://stackoverflow.com/questions/13884563/jquery-remove-class-after-css-animation-played */
-    $('a').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function (event) {
+    $('.mainNav').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function (event) {
         $(this).removeClass("animated swing fast");
     });
+
+
+
+    /* animation for project nav links */
+    $('.projLink').focus(function (event) {
+        $(this).mouseenter('animated bounce');
+    });
+
+    $('.projLink').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function (event) {
+        $('.projLink').removeClass("animated bounce");
+    });
+
+
 
     /* Animation for name */
     var secondAnimation = false;
@@ -172,18 +159,22 @@ Updated: January 8th, 2019-->
         }
     });
 
+    /* When clicking on 'projects' link */
     $('#navZero').on('click', function () {
+        //Content fades out from main screen
         $("#content").fadeOut();
 
         setTimeout(function () {
+            //sets timeout function
             $("#content").fadeOut();
         }, 2000);
 
         setTimeout(function () {
             $("#logo").fadeIn();
-            $(".gallery").slideUp(2000).delay(2000).fadeIn();
-        }, 3000);
-});
+            $('.gallery').fadeIn();
+            $(".click").slideUp(2000);
+        }, 1000);
+    });
 
     // $('#navZero').click(function (event) {
     //     $('#navOne').addClass('animated flipOutX').delay(250);
@@ -196,55 +187,83 @@ Updated: January 8th, 2019-->
 
 </script>
 
+
+
 <script>
-    // $(document).ready(function () {
+    //for project page
 
-    //     $.fn.animateRotate = function (angle, duration, easing, complete) {
-    //         var args = $.speed(duration, easing, complete);
-    //         var step = args.step;
-    //         return this.each(function (i, e) {
-    //             args.complete = $.proxy(args.complete, e);
-    //             args.step = function (now) {
-    //                 $.style(e, 'transform', 'rotate(' + now + 'deg)');
-    //                 if (step) return step.apply(e, arguments);
-    //             };
+    function loadProjects() {
+            /* This line of code came from Darius Morawiec on Stack Overflow:
+                https://stackoverflow.com/questions/17833678/count-number-of-img-tags-inside-a-div-tag
+             */
+            let images = document.getElementsByTagName("img");
+            let imgArray = [];
+            for (let i = 0; i < images.Length; i++) {
+                imgArray.push(document.getElementsByTagName("img"));
+            }
+        }
 
-    //             $({ deg: 0 }).animate({ deg: angle }, args);
-    //         });
-    //     };
-    // });
+    function filterProjects(buttonID) {
+    let buttonClicked = buttonID;
 
-    // $('#navZero').on('click', function () {
-    //     $("#content").fadeOut();
-    //     $("#mainPage").animate({
-    //         width: "25px",
-    //         height: "375px"
-    //     }, function () {
-    //         $(this).animateRotate(90);
-    //     });
+    console.log(buttonClicked);
 
-    //     setTimeout(function () {
-    //         $("mainPage").fadeOut();
-    //     }, 1500);
+    if (buttonClicked == "allLink") {
+        loopDisplay("countJS", "js");
+        loopDisplay("countDesign", "design");
+        loopDisplay("countHTML", "html");
+    }
+    else if (buttonClicked == "cSharpLink") {
+        loopHide("countJS", "js");
+        loopHide("countDesign", "design");
+        loopHide("countHTML", "html");
+    }
+    else if (buttonClicked == "designLink") {
+        loopHide("countJS", "js");
+        loopDisplay("countDesign", "design");
+        loopHide("countHTML", "html");
+    }
+    else if (buttonClicked == "htmlLink") {
+        loopHide("countJS", "js");
+        loopHide("countDesign", "design");
+        loopDisplay("countHTML", "html");
+    }
+    else if (buttonClicked == "jsLink") {
+        loopDisplay("countJS", "js");
+        loopHide("countDesign", "design");
+        loopHide("countHTML", "html");
+    }
+}
 
-    //     setTimeout(function () {
-    //         $("#galleryPage").animateRotate(0, 0);
-    //         $("#galleryPage").fadeIn();
-    //         $("#galleryPage").animate({
-    //             backgroundColor: "#27ae60"
-    //         }, function () {
-    //             $(this).animate({
-    //                 height: "100vh"
-    //             }, function () {
-    //                 $(this).animate({
-    //                     width: "100%"
-    //                 }, function () {
-    //                     $(".nextcontent").fadeIn(300);
-    //                 });
-    //             });
-    //         });
-    //     }, 800);
-    // });
+function loopDisplay(className, projName) {
+    //gets all the elements with the same class
+    let sameClass = document.getElementsByClassName(className);
+    //takes the value of how many elements there are of the class
+    for (let i = 1; i <= sameClass.length; i++) {
+        //sets a local variable equal to the name plus a value
+        //all ids of the projects have a numbered value to them
+        let idName = projName + i;
+        //sends it to displayProjects
+        displayProjects(idName);
+    }
+}
+
+function loopHide(className, projName) {
+    let sameClass = document.getElementsByClassName(className);
+    for (let i = 1; i <= sameClass.length; i++) {
+        let idName = projName + i;
+        hideProjects(idName);
+    }
+}
+
+function displayProjects(projID) {
+    //changes the display of the div 
+    document.getElementById(projID).style.display = 'block';
+}
+
+function hideProjects(projID) {
+    document.getElementById(projID).style.display = 'none';
+}
 </script>
 
 </html>
