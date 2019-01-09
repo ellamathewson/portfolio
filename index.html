@@ -216,26 +216,36 @@ Updated: January 8th, 2019-->
             loopDisplay("countJS", "js");
             loopDisplay("countDesign", "design");
             loopDisplay("countHTML", "html");
+            $("#up").css({"visibility":"hidden"});
+            $("#down").css({"visibility":"visible"});
         }
         else if (buttonClicked == "cSharpLink") {
             loopHide("countJS", "js");
             loopHide("countDesign", "design");
             loopHide("countHTML", "html");
+            $("#up").css({"visibility":"hidden"});
+            $("#down").css({"visibility":"hidden"});
         }
         else if (buttonClicked == "designLink") {
             loopHide("countJS", "js");
             loopDisplay("countDesign", "design");
             loopHide("countHTML", "html");
+            $("#up").css({"visibility":"hidden"});
+            $("#down").css({"visibility":"hidden"});
         }
         else if (buttonClicked == "htmlLink") {
             loopHide("countJS", "js");
             loopHide("countDesign", "design");
             loopDisplay("countHTML", "html");
+            $("#up").css({"visibility":"hidden"});
+            $("#down").css({"visibility":"hidden"});
         }
         else if (buttonClicked == "jsLink") {
             loopDisplay("countJS", "js");
             loopHide("countDesign", "design");
             loopHide("countHTML", "html");
+            $("#up").css({"visibility":"hidden"});
+            $("#down").css({"visibility":"hidden"});
         }
     }
 
@@ -295,8 +305,8 @@ Updated: January 8th, 2019-->
         $("#down").css({"visibility":"visible"});
     } else {
         //otherwise, both are displayed on screen
-        //$("#up").css({"visibility":"visible"});
-        //$("#down").css({"visibility":"visible"});
+        // $("#up").css({"visibility":"hidden"});
+        // $("#down").css({"visibility":"hidden"});
     }
 })
 
