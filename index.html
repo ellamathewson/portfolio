@@ -133,12 +133,12 @@ Updated: January 8th, 2019-->
 
 
     /* animation for project nav links */
-    $('.projLink').focus(function (event) {
-        $(this).mouseenter('animated bounce');
+    $('.projLink').mouseenter(function (event) {
+        $(this).addClass('animated swing fast');
     });
 
     $('.projLink').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function (event) {
-        $('.projLink').removeClass("animated bounce");
+        $('.projLink').removeClass("animated swing fast");
     });
 
 
@@ -258,11 +258,11 @@ function loopHide(className, projName) {
 
 function displayProjects(projID) {
     //changes the display of the div 
-    document.getElementById(projID).style.display = 'block';
+    document.getElementById(projID).style.visibility = 'visible';
 }
 
 function hideProjects(projID) {
-    document.getElementById(projID).style.display = 'none';
+    document.getElementById(projID).style.visibility = 'hidden';
 }
 </script>
 
