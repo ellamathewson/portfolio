@@ -1,53 +1,142 @@
 <!--Ella Mathewson
 Updated: January 8th, 2019-->
 
-    <!DOCTYPE html>
-    <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <!-- library for jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-        <!-- animate.css link for text animations -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    
-        <title>Ella Mathewson</title>
-        <link rel="icon" href="images/webLogo.png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- library for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <body>
-    
-    <div id="content">
-    
-        <div id="title">
-        <h2 class="name" id="zero">e</h2>
-        <h2 class="name" id="one">l</h2>
-        <h2 class="name" id="two">l</h2>
-        <h2 class="name" id="three">a</h2>
+    <!-- animate.css link for text animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <title>Ella Mathewson</title>
+    <link rel="icon" href="images/webLogo.png">
+</head>
+
+<body>
+    <!--
+
+        Home page upon opening
+
+    -->
+    <div id="mainPage">
+        <div id="content">
+
+            <div id="title">
+                <h2 class="name" id="zero">e</h2>
+                <h2 class="name" id="one">l</h2>
+                <h2 class="name" id="two">l</h2>
+                <h2 class="name" id="three">a</h2>
+            </div>
+
+            <nav>
+                <a id="navZero" href="#">projects</a>
+                <a id="navOne" href="#">about</a>
+                <a id="navTwo" href="#">contact</a>
+            </nav>
+
         </div>
-
-        <nav>
-            <a id="navZero" href="projects.html">projects</a>
-            <a id="navOne" href="#">about</a>
-            <a id="navTwo" href="#">contact</a>
-        </nav>
-
     </div>
 
-    </body>
+    <!--
 
-    <script>
-        $("#zero").addClass('animated fadeInUp slower');
-        $("#one").addClass('animated fadeInUp slower delay-1s');
-        $("#two").addClass('animated fadeInUp slower delay-2s');
-        $("#three").addClass('animated fadeInUp slower delay-3s');
+        Project page
+
+    -->
+    <div id="galleryPage">
+        <div class="gallery cf">
+
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_8_Tennis/DES_8.html">
+                    <img class="imgClick" src="logo/tennisLogo.png" alt="Tennis Club Poster">
+                </a>
+            </div>
+
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/CDE_2_boogieWorms/index.html">
+                    <img class="imgClick" src="logo/boogieLogo.png" alt="Boogie Worms">
+                </a>
+            </div>
+
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_4_WaterPoster1/DES_4.html">
+                    <img class="imgClick" src="logo/water1Logo.png" alt="Water Poster 1">
+                </a>
+            </div>
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_5_WaterPoster2/DES_5.html">
+                    <img class="imgClick" src="logo/water2Logo.png" alt="Water Poster 2">
+                </a>
+            </div>
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_6_WaterPoster3/DES_6.html">
+                    <img class="imgClick" src="logo/water3Logo.png" alt="Water Poster 3">
+                </a>
+            </div>
+
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/CDE_3_hueGrids/index.html">
+                    <img class="imgClick" src="logo/huegridLogo.png" alt="Hue Grid">
+                </a>
+            </div>
+
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_1_Alumni/DES_1.html">
+                    <img class="imgClick" src="logo/alumniLogo.png" alt="Alumni">
+                </a>
+            </div>
+
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_2_JC/DES_2.html">
+                    <img class="imgClick" src="logo/JCLogo.png" alt="JC Poster">
+                </a>
+            </div>
+
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/WEB_2_Wearbale/WEB_2.html">
+                    <img class="imgClick" src="logo/wearableLogo.png" alt="Wearable Devices Logo">
+                </a>
+            </div>
+
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/DES_7_Typography/DES_7.html">
+                    <img class="imgClick" src="logo/typeLogo.png" alt="Typography">
+                </a>
+            </div>
+
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/CDE_1_penguinGame/index.html">
+                    <img class="imgClick" src="logo/penguinLogo.png" alt="Penguin Game">
+                </a>
+            </div>
+
+
+            <div>
+                <a class="click" href="https://ellamathewson.github.io/portfolio/WEB_1_Laurens/WEB_1.html">
+                    <img class="imgClick" src="logo/laurensLogo.png" alt="John Laurens">
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $("#zero").addClass('animated fadeInUp slower');
+    $("#one").addClass('animated fadeInUp slower delay-1s');
+    $("#two").addClass('animated fadeInUp slower delay-2s');
+    $("#three").addClass('animated fadeInUp slower delay-3s');
 
     /* removes class once animation is through */
-    $('#three').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+    $('#three').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function (event) {
         $('#zero').removeClass("animated fadeInUp slower");
         $('#one').removeClass("animated fadeInUp slower");
         $('#two').removeClass("animated fadeInUp slower");
@@ -56,32 +145,100 @@ Updated: January 8th, 2019-->
 
 
     /* animation for nav links */
-        $('a').mouseenter(function(event) {
-            $(this).addClass('animated swing fast');
-        });
+    $('a').mouseenter(function (event) {
+        $(this).addClass('animated swing fast');
+    });
 
-/* Frédéric Hamidi gave the solution to triggering this code once the animation is over.  
-https://stackoverflow.com/questions/13884563/jquery-remove-class-after-css-animation-played */
-        $('a').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
-            $(this).removeClass("animated swing fast");
-        });
+    /* Frédéric Hamidi gave the solution to triggering this code once the animation is over.  
+    https://stackoverflow.com/questions/13884563/jquery-remove-class-after-css-animation-played */
+    $('a').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function (event) {
+        $(this).removeClass("animated swing fast");
+    });
 
     /* Animation for name */
-    var secondAnimation = false; 
-        $('#title').click(function(event) {
-            $(this).addClass('animated hinge');
-            secondAnimation = true;
-        });
+    var secondAnimation = false;
+    $('#title').click(function (event) {
+        $(this).addClass('animated hinge');
+        secondAnimation = true;
+    });
 
-        $('#title').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
-            if (secondAnimation == true) {
-                $(this).removeClass("animated hinge");
-                $(this).css({"display": "none"});
-                secondAnimation = false;
-                $(this).slideUp(3000).delay(5000).fadeIn(2000);
-            }
-        });
+    $('#title').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function (event) {
+        if (secondAnimation == true) {
+            $(this).removeClass("animated hinge");
+            $(this).css({ "display": "none" });
+            secondAnimation = false;
+            $(this).slideUp(3000).delay(4000).fadeIn(2000);
+        }
+    });
 
-    </script>
+    $('#navZero').on('click', function () {
+        $("#content").fadeOut();
     
+        setTimeout(function () {
+            $("#content").fadeOut();
+        }, 2000);
+});
+
+    // $('#navZero').click(function (event) {
+    //     $('#navOne').addClass('animated flipOutX').delay(250);
+    //     $('#navTwo').addClass('animated flipOutX').delay(500);
+    //     $(this).addClass('animated bounceOutUp delay-2s').delay(1000);
+
+    //     $("#content").css({ "display": "none" }).fadeOut(2000).delay(1500);
+    //     $(".gallery").css({ "display": "flex" }).fadeIn(2000).delay(3000);
+    // })
+
+</script>
+
+<script>
+    // $(document).ready(function () {
+
+    //     $.fn.animateRotate = function (angle, duration, easing, complete) {
+    //         var args = $.speed(duration, easing, complete);
+    //         var step = args.step;
+    //         return this.each(function (i, e) {
+    //             args.complete = $.proxy(args.complete, e);
+    //             args.step = function (now) {
+    //                 $.style(e, 'transform', 'rotate(' + now + 'deg)');
+    //                 if (step) return step.apply(e, arguments);
+    //             };
+
+    //             $({ deg: 0 }).animate({ deg: angle }, args);
+    //         });
+    //     };
+    // });
+
+    // $('#navZero').on('click', function () {
+    //     $("#content").fadeOut();
+    //     $("#mainPage").animate({
+    //         width: "25px",
+    //         height: "375px"
+    //     }, function () {
+    //         $(this).animateRotate(90);
+    //     });
+
+    //     setTimeout(function () {
+    //         $("mainPage").fadeOut();
+    //     }, 1500);
+
+    //     setTimeout(function () {
+    //         $("#galleryPage").animateRotate(0, 0);
+    //         $("#galleryPage").fadeIn();
+    //         $("#galleryPage").animate({
+    //             backgroundColor: "#27ae60"
+    //         }, function () {
+    //             $(this).animate({
+    //                 height: "100vh"
+    //             }, function () {
+    //                 $(this).animate({
+    //                     width: "100%"
+    //                 }, function () {
+    //                     $(".nextcontent").fadeIn(300);
+    //                 });
+    //             });
+    //         });
+    //     }, 800);
+    // });
+</script>
+
 </html>
