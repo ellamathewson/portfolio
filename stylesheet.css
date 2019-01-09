@@ -79,6 +79,10 @@ a:hover {
     color: darkgray;
 }
 
+#title:hover {
+    cursor: pointer;
+}
+
 /*
 
 
@@ -102,6 +106,8 @@ body::-webkit-scrollbar {
 
 #title {
     position: relative;
+    width: 20vw;
+    margin: 0 35vw;
 
     display: flex;
     flex-direction: row;
@@ -118,10 +124,12 @@ body::-webkit-scrollbar {
 
 nav {
     position: relative;
+    width: 20vw;
+    margin: 0 35vw;
+
     justify-content: center;
     align-content: center;
-    padding: 20px;
-    margin: 0;
+    padding: 20px 0;
 }
 
 /***

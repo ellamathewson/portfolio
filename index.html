@@ -46,6 +46,15 @@ Updated: January 8th, 2019-->
         $("#two").addClass('animated fadeInUp slower delay-2s');
         $("#three").addClass('animated fadeInUp slower delay-3s');
 
+    /* removes class once animation is through */
+    $('#three').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+        $('#zero').removeClass("animated fadeInUp slower");
+        $('#one').removeClass("animated fadeInUp slower");
+        $('#two').removeClass("animated fadeInUp slower");
+        $('#three').removeClass("animated fadeInUp slower");
+    });
+
+
     /* animation for nav links */
         $('a').mouseenter(function(event) {
             $(this).addClass('animated swing fast');
@@ -53,6 +62,22 @@ Updated: January 8th, 2019-->
 
         $('a').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
             $(this).removeClass("animated swing fast");
+        });
+
+    /* Animation for name */
+    var secondAnimation = false; 
+
+        $('#title').click(function(event) {
+            $(this).addClass('animated hinge');
+            secondAnimation = true;
+        });
+
+        $('#title').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+            $(this).removeClass("animated hinge");
+            if (secondAnimation == true) {
+                $(this).css({"display": "none"});
+                secondAnimation = false;
+            } else {}
         });
 
     </script>
