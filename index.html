@@ -20,7 +20,11 @@ Updated: January 8th, 2019-->
 </head>
 
 <body>
-    <p id="logo">e</p>
+    <div id="arrows">
+        <p id="up">&uarr;</p>
+        <p id="logo">e</p>
+        <p id="down">&darr;</p>
+    </div>
     <!--
 
         Home page upon opening
@@ -264,6 +268,37 @@ Updated: January 8th, 2019-->
     function hideProjects(projID) {
         document.getElementById(projID).style.display = 'none';
     }
+</script>
+
+<script>
+    /* 
+    SCROLLING AND DISPLAYING ARROWS ON SIDE OF SCREEN
+
+    Adapted from Nick Craver on Stack Overflow: 
+    https://stackoverflow.com/questions/3898130/check-if-a-user-has-scrolled-to-the-bottom 
+    */
+    
+    //jquery event on scroll
+    $(window).scroll(function() {
+        //if reaches bottom of the page (added 2 because values were not quite reaching it)
+    if($(window).scrollTop() + $(window).height() + 2 >= $(document).height()) {
+        //shows up arrow and hides down arrow
+        $("#up").css({"visibility":"visible"});
+        $("#down").css({"visibility":"hidden"});
+        console.log("bottom");
+        //if scroll to the top of page
+    } else if($(window).scrollTop() === 0){
+        //up arrow dissapears
+        $("#up").css({"visibility":"hidden"});
+        $("#down").css({"visibility":"visible"});
+        console.log("top");
+    } else {
+        //otherwise, both are displayed on screen
+        $("#up").css({"visibility":"visible"});
+        $("#down").css({"visibility":"visible"});
+    }
+})
+
 </script>
 
 </html>
