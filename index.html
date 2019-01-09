@@ -66,19 +66,20 @@ Updated: January 8th, 2019-->
 
     /* Animation for name */
     var secondAnimation = false; 
-
         $('#title').click(function(event) {
             $(this).addClass('animated hinge');
             secondAnimation = true;
         });
 
         $('#title').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
-            $(this).removeClass("animated hinge");
             if (secondAnimation == true) {
+                $(this).removeClass("animated hinge");
                 $(this).css({"display": "none"});
                 secondAnimation = false;
-            } else {}
+                $(this).slideUp(3000).delay(5000).fadeIn(2000);
+            }
         });
 
+        
     </script>
 </html>
