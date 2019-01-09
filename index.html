@@ -276,6 +276,9 @@ Updated: January 8th, 2019-->
 
     Adapted from Nick Craver on Stack Overflow: 
     https://stackoverflow.com/questions/3898130/check-if-a-user-has-scrolled-to-the-bottom 
+    and from Morgan T. on Stack Overflow:
+    https://stackoverflow.com/questions/17216846/how-check-if-user-is-at-the-top-of-the-html-page
+
     */
     
     //jquery event on scroll
@@ -285,13 +288,11 @@ Updated: January 8th, 2019-->
         //shows up arrow and hides down arrow
         $("#up").css({"visibility":"visible"});
         $("#down").css({"visibility":"hidden"});
-        console.log("bottom");
         //if scroll to the top of page
     } else if($(window).scrollTop() === 0){
         //up arrow dissapears
         $("#up").css({"visibility":"hidden"});
         $("#down").css({"visibility":"visible"});
-        console.log("top");
     } else {
         //otherwise, both are displayed on screen
         $("#up").css({"visibility":"visible"});
