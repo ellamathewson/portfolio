@@ -20,6 +20,7 @@ Updated: January 8th, 2019-->
 </head>
 
 <body>
+    <p id="logo">e</p>
     <!--
 
         Home page upon opening
@@ -36,9 +37,9 @@ Updated: January 8th, 2019-->
             </div>
 
             <nav>
-                <a id="navZero" href="#">projects</a>
-                <a id="navOne" href="#">about</a>
-                <a id="navTwo" href="#">contact</a>
+                <a id="navZero" href="#projects">projects</a>
+                <a id="navOne" href="#about">about</a>
+                <a id="navTwo" href="#contact">contact</a>
             </nav>
 
         </div>
@@ -173,10 +174,15 @@ Updated: January 8th, 2019-->
 
     $('#navZero').on('click', function () {
         $("#content").fadeOut();
-    
+
         setTimeout(function () {
             $("#content").fadeOut();
         }, 2000);
+
+        setTimeout(function () {
+            $("#logo").fadeIn();
+            $(".gallery").slideUp(2000).delay(2000).fadeIn();
+        }, 3000);
 });
 
     // $('#navZero').click(function (event) {

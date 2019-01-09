@@ -48,7 +48,7 @@ p {
 /***
     Changes color of links and removes the line underneath it
 ***/
-a {
+a, p {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
@@ -130,6 +130,15 @@ nav {
     justify-content: center;
     align-content: center;
     padding: 20px 0;
+}
+
+#logo {
+    display: none;
+    justify-content: left;
+    margin: -40vh 0 0 0;
+    padding: 0;
+    position: absolute;
+    font-size: 40px;
 }
 
 /*
