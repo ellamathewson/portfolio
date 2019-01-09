@@ -52,10 +52,10 @@ Updated: January 8th, 2019-->
     -->
 
     <nav class="projNav">
-            <a class="projLink" id="allLink" onclick="filterProjects(this.id)">All</a>
-            <a class="projLink" id="designLink" onclick="filterProjects(this.id)">Design</a>
-            <a class="projLink" id="htmlLink" onclick="filterProjects(this.id)">Web</a>
-            <a class="projLink" id="jsLink" onclick="filterProjects(this.id)">JavaScript</a>
+        <a class="projLink" id="allLink" onclick="filterProjects(this.id)">All</a>
+        <a class="projLink" id="designLink" onclick="filterProjects(this.id)">Design</a>
+        <a class="projLink" id="htmlLink" onclick="filterProjects(this.id)">Web</a>
+        <a class="projLink" id="jsLink" onclick="filterProjects(this.id)">JavaScript</a>
     </nav>
 
     <div class="projectsGrid">
@@ -133,13 +133,13 @@ Updated: January 8th, 2019-->
 
 
     /* animation for project nav links */
-    $('.projLink').mouseenter(function (event) {
-        $(this).addClass('animated swing fast');
-    });
+    // $('.projLink').mouseenter(function (event) {
+    //     $(this).addClass('animated swing fast');
+    // });
 
-    $('.projLink').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function (event) {
-        $('.projLink').removeClass("animated swing fast");
-    });
+    // $('.projLink').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function (event) {
+    //     $('.projLink').removeClass("animated swing fast");
+    // });
 
 
 
@@ -193,77 +193,77 @@ Updated: January 8th, 2019-->
     //for project page
 
     function loadProjects() {
-            /* This line of code came from Darius Morawiec on Stack Overflow:
-                https://stackoverflow.com/questions/17833678/count-number-of-img-tags-inside-a-div-tag
-             */
-            let images = document.getElementsByTagName("img");
-            let imgArray = [];
-            for (let i = 0; i < images.Length; i++) {
-                imgArray.push(document.getElementsByTagName("img"));
-            }
+        /* This line of code came from Darius Morawiec on Stack Overflow:
+            https://stackoverflow.com/questions/17833678/count-number-of-img-tags-inside-a-div-tag
+         */
+        let images = document.getElementsByTagName("img");
+        let imgArray = [];
+        for (let i = 0; i < images.Length; i++) {
+            imgArray.push(document.getElementsByTagName("img"));
         }
+    }
 
     function filterProjects(buttonID) {
-    let buttonClicked = buttonID;
+        let buttonClicked = buttonID;
 
-    console.log(buttonClicked);
+        console.log(buttonClicked);
 
-    if (buttonClicked == "allLink") {
-        loopDisplay("countJS", "js");
-        loopDisplay("countDesign", "design");
-        loopDisplay("countHTML", "html");
+        if (buttonClicked == "allLink") {
+            loopDisplay("countJS", "js");
+            loopDisplay("countDesign", "design");
+            loopDisplay("countHTML", "html");
+        }
+        else if (buttonClicked == "cSharpLink") {
+            loopHide("countJS", "js");
+            loopHide("countDesign", "design");
+            loopHide("countHTML", "html");
+        }
+        else if (buttonClicked == "designLink") {
+            loopHide("countJS", "js");
+            loopDisplay("countDesign", "design");
+            loopHide("countHTML", "html");
+        }
+        else if (buttonClicked == "htmlLink") {
+            loopHide("countJS", "js");
+            loopHide("countDesign", "design");
+            loopDisplay("countHTML", "html");
+        }
+        else if (buttonClicked == "jsLink") {
+            loopDisplay("countJS", "js");
+            loopHide("countDesign", "design");
+            loopHide("countHTML", "html");
+        }
     }
-    else if (buttonClicked == "cSharpLink") {
-        loopHide("countJS", "js");
-        loopHide("countDesign", "design");
-        loopHide("countHTML", "html");
-    }
-    else if (buttonClicked == "designLink") {
-        loopHide("countJS", "js");
-        loopDisplay("countDesign", "design");
-        loopHide("countHTML", "html");
-    }
-    else if (buttonClicked == "htmlLink") {
-        loopHide("countJS", "js");
-        loopHide("countDesign", "design");
-        loopDisplay("countHTML", "html");
-    }
-    else if (buttonClicked == "jsLink") {
-        loopDisplay("countJS", "js");
-        loopHide("countDesign", "design");
-        loopHide("countHTML", "html");
-    }
-}
 
-function loopDisplay(className, projName) {
-    //gets all the elements with the same class
-    let sameClass = document.getElementsByClassName(className);
-    //takes the value of how many elements there are of the class
-    for (let i = 1; i <= sameClass.length; i++) {
-        //sets a local variable equal to the name plus a value
-        //all ids of the projects have a numbered value to them
-        let idName = projName + i;
-        //sends it to displayProjects
-        displayProjects(idName);
+    function loopDisplay(className, projName) {
+        //gets all the elements with the same class
+        let sameClass = document.getElementsByClassName(className);
+        //takes the value of how many elements there are of the class
+        for (let i = 1; i <= sameClass.length; i++) {
+            //sets a local variable equal to the name plus a value
+            //all ids of the projects have a numbered value to them
+            let idName = projName + i;
+            //sends it to displayProjects
+            displayProjects(idName);
+        }
     }
-}
 
-function loopHide(className, projName) {
-    let sameClass = document.getElementsByClassName(className);
-    for (let i = 1; i <= sameClass.length; i++) {
-        let idName = projName + i;
-        hideProjects(idName);
+    function loopHide(className, projName) {
+        let sameClass = document.getElementsByClassName(className);
+        for (let i = 1; i <= sameClass.length; i++) {
+            let idName = projName + i;
+            hideProjects(idName);
+        }
     }
-}
 
-function displayProjects(projID) {
-    //changes the display of the div 
-    document.getElementById(projID).style.visibility = 'visible';
-}
+    function displayProjects(projID) {
+        //changes the display of the div 
+        document.getElementById(projID).style.display = 'block';
+    }
 
-function hideProjects(projID) {
-    document.getElementById(projID).style.visibility = 'hidden';
-}
+    function hideProjects(projID) {
+        document.getElementById(projID).style.display = 'none';
+    }
 </script>
 
 </html>

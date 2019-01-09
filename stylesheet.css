@@ -195,6 +195,7 @@ hr {
     height: 100vh;
     flex-wrap: wrap;
     justify-content: center;
+    transition: all 1s ease;
 }
 
 .projImg {
