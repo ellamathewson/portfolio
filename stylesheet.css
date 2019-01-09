@@ -166,6 +166,10 @@ nav {
     visibility: hidden;
 }
 
+#up:hover, #down:hover {
+    cursor: default;
+}
+
 #logo:hover {
     cursor: pointer;
     transform: scale(2);
