@@ -9,9 +9,16 @@ Updated: October 4th, 2018*/
 /***
     Div for all the content on the page. Centers it and gives it space on the sides
 ***/
+
+html {
+    background-color: lightgray;
+}
+
 .content {
     width: 90%;
     margin: 5px 5%;
+    display: flex;
+    flex-direction: column;
 }
 
 /***
@@ -42,8 +49,13 @@ p {
     Changes color of links and removes the line underneath it
 ***/
 a {
-    color: #008ED1;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     text-decoration: none;
+    color: black;
+    padding: 1.5em 0;
 }
 
 /***
@@ -64,8 +76,7 @@ a {
     When hovering over the link, the underline comes back and it changes color
 ***/
 a:hover {
-    color: #008ED1;
-    text-decoration: underline;
+    color: darkgray;
 }
 
 /*
@@ -75,18 +86,42 @@ a:hover {
 
 
 */
-#name {
-    margin: 0 0;
-    width: 15%;
-    float: center;
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+    margin: 0 5vw;
 }
 
-h2 {
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#title {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    padding: 0 2px;
+
     font-family: 'Montserrat', sans-serif;
     color: black;
-    font-size: 40px;
-    letter-spacing: 2.5px;
+}
+
+.name {
+    font-size: 50px;
+}
+
+nav {
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    margin: 0;
 }
 
 /***
@@ -104,18 +139,6 @@ h2 {
     padding: 10px;
     text-align: center;
 }
-
-/***
-    Uses flexbox to display two nav links next to each other and take up 
-    the div
-***/
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    justify-content: center;
-    padding: 10px 10%;
-    }
 
 /***
     On project pages, this is for the line that divides the header and nav from the rest of 

@@ -1,11 +1,5 @@
 <!--Ella Mathewson
-Updated: October 4th, 2018-->
-
-<!--
-    NOTE: THE CSS FILE IS IN THE LIBRARIES FOLDER, INSTEAD OF
-    IN THE MAIN FOLDER WITH THE HTML FILE, DUE TO A SERVER ISSUE.
-    IT WILL BE FIXED AS SOON AS POSSIBLE.
-    -->
+Updated: January 8th, 2019-->
 
     <!DOCTYPE html>
     <html lang="en">
@@ -15,19 +9,57 @@ Updated: October 4th, 2018-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <!-- library for jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <!-- animate.css link for text animations -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     
+        <!-- particle.js link for particles on screen -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
         <title>Ella Mathewson</title>
         <link rel="icon" href="images/webLogo.png">
     </head>
-    
+
     <body>
+
+        <div id="content">
     
-        <div id="name">
-        <h2 id="mainPage" class="animated fadeInUp slow">ella</h2>
+        <div id="title">
+        <h2 class="name" id="zero">e</h2>
+        <h2 class="name" id="one">l</h2>
+        <h2 class="name" id="two">l</h2>
+        <h2 class="name" id="three">a</h2>
         </div>
 
+        <nav>
+            <a id="navZero" href="projects.html">projects</a>
+            <a id="navOne" href="#">about</a>
+            <a id="navTwo" href="#">contact</a>
+        </nav>
+
+    </div>
+
     </body>
+
+    <script>
+        $("#zero").addClass('animated fadeInUp slower');
+        $("#one").addClass('animated fadeInUp slower delay-1s');
+        $("#two").addClass('animated fadeInUp slower delay-2s');
+        $("#three").addClass('animated fadeInUp slower delay-3s');
+
+    /* animation for nav links */
+        $('a').mouseenter(function(event) {
+            $(this).addClass('animated swing fast');
+        });
+
+        $('a').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+            $(this).removeClass("animated swing fast");
+        });
+
+    </script>
     
-    </html>
+
+
+</html>
