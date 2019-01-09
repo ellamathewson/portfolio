@@ -60,6 +60,8 @@ Updated: January 8th, 2019-->
             $(this).addClass('animated swing fast');
         });
 
+/* Frédéric Hamidi gave the solution to triggering this code once the animation is over.  
+https://stackoverflow.com/questions/13884563/jquery-remove-class-after-css-animation-played */
         $('a').on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
             $(this).removeClass("animated swing fast");
         });
@@ -80,6 +82,6 @@ Updated: January 8th, 2019-->
             }
         });
 
-        
     </script>
+    
 </html>
