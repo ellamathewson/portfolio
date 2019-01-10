@@ -90,6 +90,9 @@ a:hover {
 
 
 */
+#mainPage {
+    /* display: none; */
+}
 body {
     display: flex;
     justify-content: center;
@@ -103,9 +106,9 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+
 #content{
-    position: absolute;
-    display: none;
+    position: relative;
 }
 
 #title {
@@ -148,7 +151,6 @@ nav {
 }
 
 #logo {
-    /* display: none; */
     font-size: 40px;
     margin: 0;
     padding: 0;
@@ -196,10 +198,16 @@ hr {
 
 
 */
+#projPage {
+    display: none;
+}
+
 .projNav {
+    clear: both;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 25vh 35vw 0 35vw;
 }
 
 .projLink {

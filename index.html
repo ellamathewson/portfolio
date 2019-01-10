@@ -20,11 +20,6 @@ Updated: January 8th, 2019-->
 </head>
 
 <body>
-    <div id="arrows">
-        <p id="up">&uarr;</p>
-        <p id="logo">e</p>
-        <p id="down">&darr;</p>
-    </div>
     <!--
 
         Home page upon opening
@@ -54,55 +49,63 @@ Updated: January 8th, 2019-->
         Project page
 
     -->
+    <div id="projPage">
 
-    <nav class="projNav">
-        <a class="projLink" id="allLink" onclick="filterProjects(this.id)">All</a>
-        <a class="projLink" id="designLink" onclick="filterProjects(this.id)">Design</a>
-        <a class="projLink" id="htmlLink" onclick="filterProjects(this.id)">Web</a>
-        <a class="projLink" id="jsLink" onclick="filterProjects(this.id)">JavaScript</a>
-    </nav>
-
-    <div class="projectsGrid">
-        <div class="countJS" id="js3">
-            <a href="#"><img class="projImg" src="media/seaProjectLogo.png" alt="Sea What You Did? Link"></a>
+        <div id="arrows">
+            <p id="up">&uarr;</p>
+            <p id="logo">e</p>
+            <p id="down">&darr;</p>
         </div>
 
-        <div class="countDesign" id="design5">
-            <a href="#"><img class="projImg" src="media/tennisLogo.png" alt="Tennis club poster link"></a>
-        </div>
+        <nav class="projNav">
+            <a class="projLink" id="allLink" onclick="filterProjects(this.id)">All</a>
+            <a class="projLink" id="designLink" onclick="filterProjects(this.id)">Design</a>
+            <a class="projLink" id="htmlLink" onclick="filterProjects(this.id)">Web</a>
+            <a class="projLink" id="jsLink" onclick="filterProjects(this.id)">JavaScript</a>
+        </nav>
 
-        <div class="countHTML" id="html2">
-            <a href="#"><img class="projImg" src="media/igmeLogo.png" alt="Class landing page for exercises link"></a>
-        </div>
+        <div class="projectsGrid">
+            <div class="countJS" id="js3">
+                <a href="#"><img class="projImg" src="media/seaProjectLogo.png" alt="Sea What You Did? Link"></a>
+            </div>
 
-        <div class="countJS" id="js1">
-            <a href="#"><img class="projImg" src="media/boogieLogo.png" alt="Boogie Worms interactive game link"></a>
-        </div>
+            <div class="countDesign" id="design5">
+                <a href="#"><img class="projImg" src="media/tennisLogo.png" alt="Tennis club poster link"></a>
+            </div>
 
-        <div class="countJS" id="js2">
-            <a href="#"><img class="projImg" src="media/huegridLogo.png" alt="Hue grids project link"></a>
-        </div>
+            <div class="countHTML" id="html2">
+                <a href="#"><img class="projImg" src="media/igmeLogo.png" alt="Class landing page for exercises link"></a>
+            </div>
 
-        <div class="countDesign" id="design4">
-            <a href="#"><img class="projImg" src="media/water1Logo.png" alt="Water footprints poster link"></a>
-        </div>
+            <div class="countJS" id="js1">
+                <a href="#"><img class="projImg" src="media/boogieLogo.png" alt="Boogie Worms interactive game link"></a>
+            </div>
 
-        <div class="countDesign" id="design3">
-            <a href="#"><img class="projImg" src="media/water2Logo.png" alt="Water cups poster link"></a>
-        </div>
+            <div class="countJS" id="js2">
+                <a href="#"><img class="projImg" src="media/huegridLogo.png" alt="Hue grids project link"></a>
+            </div>
 
-        <div class="countDesign" id="design2">
-            <a href="#.html"><img class="projImg" src="media/water3Logo.png" alt="Water foutain poster link"></a>
-        </div>
+            <div class="countDesign" id="design4">
+                <a href="#"><img class="projImg" src="media/water1Logo.png" alt="Water footprints poster link"></a>
+            </div>
 
-        <div class="countDesign" id="design1">
-            <a href="#s.html"><img class="projImg" src="media/alumniLogo.png" alt="Alumni poster project link"></a>
-        </div>
-        <div class="countHTML" id="html1">
-            <a href="#l"><img class="projImg" src="media/wearableLogo.png" alt="Wearable devices website link"></a>
-        </div>
+            <div class="countDesign" id="design3">
+                <a href="#"><img class="projImg" src="media/water2Logo.png" alt="Water cups poster link"></a>
+            </div>
+
+            <div class="countDesign" id="design2">
+                <a href="#.html"><img class="projImg" src="media/water3Logo.png" alt="Water foutain poster link"></a>
+            </div>
+
+            <div class="countDesign" id="design1">
+                <a href="#s.html"><img class="projImg" src="media/alumniLogo.png" alt="Alumni poster project link"></a>
+            </div>
+            <div class="countHTML" id="html1">
+                <a href="#l"><img class="projImg" src="media/wearableLogo.png" alt="Wearable devices website link"></a>
+            </div>
 
 
+        </div>
     </div>
 
 </body>
@@ -166,17 +169,32 @@ Updated: January 8th, 2019-->
     /* When clicking on 'projects' link */
     $('#navZero').on('click', function () {
         //Content fades out from main screen
-        $("#content").fadeOut();
+        $("#mainPage").fadeOut();
 
         setTimeout(function () {
             //sets timeout function
-            $("#content").fadeOut();
+            $("#mainPage").fadeOut();
+            $("#mainPage").css({ "display": "none" });
         }, 2000);
 
         setTimeout(function () {
-            $("#logo").fadeIn();
-            $('.gallery').fadeIn();
-            $(".click").slideUp(2000);
+            $("#projPage").fadeIn();
+        }, 1000);
+    });
+
+/* When clicking on 'projects' link */
+$('#logo').on('click', function () {
+        //Content fades out from main screen
+        $("#projPage").fadeOut();
+
+        setTimeout(function () {
+            //sets timeout function
+            $("#projPage").fadeOut();
+            $("#projPage").css({ "display": "none" });
+        }, 2000);
+
+        setTimeout(function () {
+            $("#mainPage").fadeIn();
         }, 1000);
     });
 
@@ -216,36 +234,36 @@ Updated: January 8th, 2019-->
             loopDisplay("countJS", "js");
             loopDisplay("countDesign", "design");
             loopDisplay("countHTML", "html");
-            $("#up").css({"visibility":"hidden"});
-            $("#down").css({"visibility":"visible"});
+            $("#up").css({ "visibility": "hidden" });
+            $("#down").css({ "visibility": "visible" });
         }
         else if (buttonClicked == "cSharpLink") {
             loopHide("countJS", "js");
             loopHide("countDesign", "design");
             loopHide("countHTML", "html");
-            $("#up").css({"visibility":"hidden"});
-            $("#down").css({"visibility":"hidden"});
+            $("#up").css({ "visibility": "hidden" });
+            $("#down").css({ "visibility": "hidden" });
         }
         else if (buttonClicked == "designLink") {
             loopHide("countJS", "js");
             loopDisplay("countDesign", "design");
             loopHide("countHTML", "html");
-            $("#up").css({"visibility":"hidden"});
-            $("#down").css({"visibility":"hidden"});
+            $("#up").css({ "visibility": "hidden" });
+            $("#down").css({ "visibility": "hidden" });
         }
         else if (buttonClicked == "htmlLink") {
             loopHide("countJS", "js");
             loopHide("countDesign", "design");
             loopDisplay("countHTML", "html");
-            $("#up").css({"visibility":"hidden"});
-            $("#down").css({"visibility":"hidden"});
+            $("#up").css({ "visibility": "hidden" });
+            $("#down").css({ "visibility": "hidden" });
         }
         else if (buttonClicked == "jsLink") {
             loopDisplay("countJS", "js");
             loopHide("countDesign", "design");
             loopHide("countHTML", "html");
-            $("#up").css({"visibility":"hidden"});
-            $("#down").css({"visibility":"hidden"});
+            $("#up").css({ "visibility": "hidden" });
+            $("#down").css({ "visibility": "hidden" });
         }
     }
 
@@ -290,25 +308,25 @@ Updated: January 8th, 2019-->
     https://stackoverflow.com/questions/17216846/how-check-if-user-is-at-the-top-of-the-html-page
 
     */
-    
+
     //jquery event on scroll
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         //if reaches bottom of the page (added 2 because values were not quite reaching it)
-    if($(window).scrollTop() + $(window).height() + 2 >= $(document).height()) {
-        //shows up arrow and hides down arrow
-        $("#up").css({"visibility":"visible"});
-        $("#down").css({"visibility":"hidden"});
-        //if scroll to the top of page
-    } else if($(window).scrollTop() === 0){
-        //up arrow dissapears
-        $("#up").css({"visibility":"hidden"});
-        $("#down").css({"visibility":"visible"});
-    } else {
-        //otherwise, both are displayed on screen
-        // $("#up").css({"visibility":"hidden"});
-        // $("#down").css({"visibility":"hidden"});
-    }
-})
+        if ($(window).scrollTop() + $(window).height() + 2 >= $(document).height()) {
+            //shows up arrow and hides down arrow
+            $("#up").css({ "visibility": "visible" });
+            $("#down").css({ "visibility": "hidden" });
+            //if scroll to the top of page
+        } else if ($(window).scrollTop() === 0) {
+            //up arrow dissapears
+            $("#up").css({ "visibility": "hidden" });
+            $("#down").css({ "visibility": "visible" });
+        } else {
+            //otherwise, both are displayed on screen
+            // $("#up").css({"visibility":"hidden"});
+            // $("#down").css({"visibility":"hidden"});
+        }
+    })
 
 </script>
 
