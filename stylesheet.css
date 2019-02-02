@@ -264,16 +264,58 @@ hr {
 
 
 ******/
+.projTitle {
+    position: relative;
+    width: 20vw;
+    margin: 0 35vw;
 
-/***
-    Displaying the paragraph on project pages
-***/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 2px;
+
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 40px;
+}
+
+.projTitle:hover {
+    cursor: default;
+}
+
+.projectPage {
+    margin-top: 10rem;
+}
+
+.gridProject {
+    width: 90%;
+    margin: 5% 2.5% 0 2.5%;
+    display: grid;
+    grid-template-areas: 'finalImage text';
+    grid-gap: 2em;
+    padding: 1em;
+}
+
 .projInfo {
-    display: block;
-    float: right;
-    width: 50%;
-    padding-right: 2.5%;
     margin-top: 50px;
+}
+
+.projectImg {
+    padding: 0;
+    margin: 25% 0 0 0;
+    max-width: 100%;
+    height: auto;
+    clear: both;
+}
+
+.imageGridContainer {
+    grid-area: finalImage;
+    border: 1px solid black;
+}
+
+.textGridContainer {
+    grid-area: text;
+    border: 1px solid green;
 }
 
 /***
@@ -286,16 +328,6 @@ hr {
     width: 40%;
 }
 
-/***
-    Location and sizing of images on project pages
-***/
-.projectImg {
-    padding: 0;
-    margin: 0;
-    max-width: 40%;
-    height: auto;
-    padding-left: 5%;
-}
 
 /***
     Location and sizing of images that were wider and worked
