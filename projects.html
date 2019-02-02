@@ -1,114 +1,205 @@
 <!--Ella Mathewson
 Updated: October 4th, 2018-->
 
-<!--
-    NOTE: THE CSS FILE IS IN THE LIBRARIES FOLDER, INSTEAD OF
-    IN THE MAIN FOLDER WITH THE HTML FILE, DUE TO A SERVER ISSUE.
-    IT WILL BE FIXED AS SOON AS POSSIBLE.
-    -->
+<!DOCTYPE html>
+<html lang="en">
 
-    <!DOCTYPE html>
-    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <title>Ella Mathewson</title>
-        <link rel="icon" href="images/webLogo.png">
-    </head>
+    <title>Ella Mathewson</title>
+    <link rel="icon" href="images/webLogo.png">
+</head>
 
-    <body>
+<body>
 
-        <div class="content">
+    <div id="projPage">
 
-            <div class="header">
-                <h1 id="title">Ella Mathewson</h1>
-
-                <nav>
-                    <a href="https://ellamathewson.github.io/portfolio/" class="link">Work</a>
-                    <a href="https://ellamathewson.github.io/portfolio/NB_1_About/index.html" class="link">About</a>
-                </nav>
-            </div>
-
-            <div class="gallery cf">
-
-                    <div>
-                            <a class="click" href="https://ellamathewson.github.io/portfolio/DES_8_Tennis/DES_8.html">
-                                <img class="imgClick" src="logo/tennisLogo.png" alt="Tennis Club Poster">
-                            </a>
-                    </div>
-
-                <div>
-                    <a class="click" href="https://ellamathewson.github.io/portfolio/CDE_2_boogieWorms/index.html">
-                        <img class="imgClick" src="logo/boogieLogo.png" alt="Boogie Worms">
-                    </a>
-                </div>
-
-                <div>
-                    <a class="click" href="https://ellamathewson.github.io/portfolio/DES_4_WaterPoster1/DES_4.html">
-                        <img class="imgClick" src="logo/water1Logo.png" alt="Water Poster 1">
-                    </a>
-                </div>
-                <div>
-                    <a class="click" href="https://ellamathewson.github.io/portfolio/DES_5_WaterPoster2/DES_5.html">
-                        <img class="imgClick" src="logo/water2Logo.png" alt="Water Poster 2">
-                    </a>
-                </div>
-                <div>
-                    <a class="click" href="https://ellamathewson.github.io/portfolio/DES_6_WaterPoster3/DES_6.html">
-                        <img class="imgClick" src="logo/water3Logo.png" alt="Water Poster 3">
-                    </a>
-                </div>
-
-                <div>
-                    <a class="click" href="https://ellamathewson.github.io/portfolio/CDE_3_hueGrids/index.html">
-                        <img class="imgClick" src="logo/huegridLogo.png" alt="Hue Grid">
-                    </a>
-                </div>
-
-                <div>
-                    <a class="click" href="https://ellamathewson.github.io/portfolio/DES_1_Alumni/DES_1.html">
-                        <img class="imgClick" src="logo/alumniLogo.png" alt="Alumni">
-                    </a>
-                </div>
-
-                <div>
-                    <a class="click" href="https://ellamathewson.github.io/portfolio/DES_2_JC/DES_2.html">
-                        <img class="imgClick" src="logo/JCLogo.png" alt="JC Poster">
-                    </a>
-                </div>
-
-                <div>
-                    <a class="click" href="https://ellamathewson.github.io/portfolio/WEB_2_Wearbale/WEB_2.html">
-                        <img class="imgClick" src="logo/wearableLogo.png" alt="Wearable Devices Logo">
-                    </a>
-                </div>
-
-                <div>
-                    <a class="click" href="https://ellamathewson.github.io/portfolio/DES_7_Typography/DES_7.html">
-                        <img class="imgClick" src="logo/typeLogo.png" alt="Typography">
-                    </a>
-                </div>
-
-                <div>
-                    <a class="click" href="https://ellamathewson.github.io/portfolio/CDE_1_penguinGame/index.html">
-                        <img class="imgClick" src="logo/penguinLogo.png" alt="Penguin Game">
-                    </a>
-                </div>
-
-
-                <div>
-                    <a class="click" href="https://ellamathewson.github.io/portfolio/WEB_1_Laurens/WEB_1.html">
-                        <img class="imgClick" src="logo/laurensLogo.png" alt="John Laurens">
-                    </a>
-                </div>
-
-
-            </div>
+        <div id="arrows">
+            <p id="up">&uarr;</p>
+            <p id="logo">e</p>
+            <p id="down">&darr;</p>
         </div>
-    </body>
 
-    </html>
+        <nav class="projNav">
+            <a class="projLink" id="allLink" onclick="filterProjects(this.id)">All</a>
+            <a class="projLink" id="designLink" onclick="filterProjects(this.id)">Design</a>
+            <a class="projLink" id="htmlLink" onclick="filterProjects(this.id)">Web</a>
+            <a class="projLink" id="jsLink" onclick="filterProjects(this.id)">JavaScript</a>
+        </nav>
+
+        <div class="projectsGrid">
+            <div class="countJS" id="js3">
+                <a href="https://jjheipz24.github.io/ocean-project/index.html">
+                    <img class="projImg" src="media/seaProjectLogo.png" alt="Sea What You Did? Link"></a>
+            </div>
+
+            <div class="countDesign" id="design5">
+                <a href="https://ellamathewson.github.io/portfolio/DES_8_Tennis/DES_8.html"><img class="projImg" src="media/tennisLogo.png"
+                        alt="Tennis club poster link"></a>
+            </div>
+
+            <div class="countHTML" id="html2">
+                <a href="#"><img class="projImg" src="media/igmeLogo.png" alt="Class landing page for exercises link"></a>
+            </div>
+
+            <div class="countJS" id="js1">
+                <a href="#"><img class="projImg" src="media/boogieLogo.png" alt="Boogie Worms interactive game link"></a>
+            </div>
+
+            <div class="countJS" id="js2">
+                <a href="#"><img class="projImg" src="media/huegridLogo.png" alt="Hue grids project link"></a>
+            </div>
+
+            <div class="countDesign" id="design4">
+                <a href="#"><img class="projImg" src="media/water1Logo.png" alt="Water footprints poster link"></a>
+            </div>
+
+            <div class="countDesign" id="design3">
+                <a href="#"><img class="projImg" src="media/water2Logo.png" alt="Water cups poster link"></a>
+            </div>
+
+            <div class="countDesign" id="design2">
+                <a href="#.html"><img class="projImg" src="media/water3Logo.png" alt="Water foutain poster link"></a>
+            </div>
+
+            <div class="countDesign" id="design1">
+                <a href="#s.html"><img class="projImg" src="media/alumniLogo.png" alt="Alumni poster project link"></a>
+            </div>
+            <div class="countHTML" id="html1">
+                <a href="#l"><img class="projImg" src="media/wearableLogo.png" alt="Wearable devices website link"></a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            $("#projPage").fadeIn();
+        }
+
+        function loadProjects() {
+        /* This line of code came from Darius Morawiec on Stack Overflow:
+            https://stackoverflow.com/questions/17833678/count-number-of-img-tags-inside-a-div-tag
+         */
+        let images = document.getElementsByTagName("img");
+        let imgArray = [];
+        for (let i = 0; i < images.Length; i++) {
+            imgArray.push(document.getElementsByTagName("img"));
+        }
+    }
+
+    function filterProjects(buttonID) {
+        let buttonClicked = buttonID;
+
+        console.log(buttonClicked);
+
+        if (buttonClicked == "allLink") {
+            loopDisplay("countJS", "js");
+            loopDisplay("countDesign", "design");
+            loopDisplay("countHTML", "html");
+            $("#up").css({ "visibility": "hidden" });
+            $("#down").css({ "visibility": "visible" });
+        }
+        else if (buttonClicked == "cSharpLink") {
+            loopHide("countJS", "js");
+            loopHide("countDesign", "design");
+            loopHide("countHTML", "html");
+            $("#up").css({ "visibility": "hidden" });
+            $("#down").css({ "visibility": "hidden" });
+        }
+        else if (buttonClicked == "designLink") {
+            loopHide("countJS", "js");
+            loopDisplay("countDesign", "design");
+            loopHide("countHTML", "html");
+            $("#up").css({ "visibility": "hidden" });
+            $("#down").css({ "visibility": "hidden" });
+        }
+        else if (buttonClicked == "htmlLink") {
+            loopHide("countJS", "js");
+            loopHide("countDesign", "design");
+            loopDisplay("countHTML", "html");
+            $("#up").css({ "visibility": "hidden" });
+            $("#down").css({ "visibility": "hidden" });
+        }
+        else if (buttonClicked == "jsLink") {
+            loopDisplay("countJS", "js");
+            loopHide("countDesign", "design");
+            loopHide("countHTML", "html");
+            $("#up").css({ "visibility": "hidden" });
+            $("#down").css({ "visibility": "hidden" });
+        }
+    }
+
+    function loopDisplay(className, projName) {
+        //gets all the elements with the same class
+        let sameClass = document.getElementsByClassName(className);
+        //takes the value of how many elements there are of the class
+        for (let i = 1; i <= sameClass.length; i++) {
+            //sets a local variable equal to the name plus a value
+            //all ids of the projects have a numbered value to them
+            let idName = projName + i;
+            //sends it to displayProjects
+            displayProjects(idName);
+        }
+    }
+
+    function loopHide(className, projName) {
+        let sameClass = document.getElementsByClassName(className);
+        for (let i = 1; i <= sameClass.length; i++) {
+            let idName = projName + i;
+            hideProjects(idName);
+        }
+    }
+
+    function displayProjects(projID) {
+        //changes the display of the div 
+        document.getElementById(projID).style.display = 'block';
+    }
+
+    function hideProjects(projID) {
+        document.getElementById(projID).style.display = 'none';
+    }
+    </script>
+
+<script>
+        /* 
+        SCROLLING AND DISPLAYING ARROWS ON SIDE OF SCREEN
+    
+        Adapted from Nick Craver on Stack Overflow: 
+        https://stackoverflow.com/questions/3898130/check-if-a-user-has-scrolled-to-the-bottom 
+        and from Morgan T. on Stack Overflow:
+        https://stackoverflow.com/questions/17216846/how-check-if-user-is-at-the-top-of-the-html-page
+    
+        */
+    
+        //jquery event on scroll
+        $(window).scroll(function () {
+            //if reaches bottom of the page (added 2 because values were not quite reaching it)
+            if ($(window).scrollTop() + $(window).height() + 2 >= $(document).height()) {
+                //shows up arrow and hides down arrow
+                $("#up").css({ "visibility": "visible" });
+                $("#down").css({ "visibility": "hidden" });
+                //if scroll to the top of page
+            } else if ($(window).scrollTop() === 0) {
+                //up arrow dissapears
+                $("#up").css({ "visibility": "hidden" });
+                $("#down").css({ "visibility": "visible" });
+            } else {
+                //otherwise, both are displayed on screen
+                // $("#up").css({"visibility":"hidden"});
+                // $("#down").css({"visibility":"hidden"});
+            }
+        })
+    
+    </script>
+    
+</body>
+
+</html>
