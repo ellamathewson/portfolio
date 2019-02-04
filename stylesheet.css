@@ -188,6 +188,8 @@ hr {
     width: 25%;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), 
     rgba(250, 139, 139, 0));
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -263,15 +265,8 @@ hr {
 
 
 ******/
-.projTitle {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-    margin: 10% 0 0 0;
 
-    font-family: 'Montserrat', sans-serif;
-    color: black;
+.logoProjPage {
     font-size: 40px;
 }
 
@@ -281,6 +276,7 @@ hr {
 
 .projectPage {
     margin-top: 5rem;
+    position: relative;
 }
 
 .gridProject {
