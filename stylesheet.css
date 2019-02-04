@@ -266,13 +266,11 @@ hr {
 ******/
 .projTitle {
     position: relative;
-    width: 20vw;
-    margin: 0 35vw;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0 2px;
+    padding: 0;
+    margin: -5% 0;
 
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -284,38 +282,32 @@ hr {
 }
 
 .projectPage {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .gridProject {
     width: 90%;
-    margin: 5% 2.5% 0 2.5%;
+    margin: 0 2.5%;
     display: grid;
     grid-template-areas: 'finalImage text';
     grid-gap: 2em;
     padding: 1em;
 }
 
-.projInfo {
-    margin-top: 50px;
-}
 
 .projectImg {
-    padding: 0;
-    margin: 25% 0 0 0;
+    grid-area: finalImage;
+    padding: 2em 0 0 0;
+    margin: 0;
     max-width: 100%;
     height: auto;
     clear: both;
 }
 
-.imageGridContainer {
-    grid-area: finalImage;
-    border: 1px solid black;
-}
-
 .textGridContainer {
     grid-area: text;
-    border: 1px solid green;
+    margin: 0;
+    padding: 0;
 }
 
 /***
