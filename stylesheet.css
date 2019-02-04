@@ -264,12 +264,11 @@ hr {
 
 ******/
 .projTitle {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 0;
-    margin: -5% 0;
+    margin: 10% 0 0 0;
 
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -307,6 +306,7 @@ hr {
     margin: 0;
     padding: 0;
     line-height: 0.5;
+    position: relative;
 }
 
 /***
@@ -358,55 +358,3 @@ hr {
     is this size, the number of columns on the main page becomes 1. Along with this, the
     images on the project pages adapt as well.
 ***/
-@media (min-width: 400px) and (max-width: 893px) {
-    .content {
-        float: left;
-        margin: 0 15%;
-        width: 70%;
-    }
-    .gallery {
-        margin: 0 20%; 
-    }
-    .header {
-        width: 95%;
-        margin: 0 0.5%;
-    }
-    .projectImg {
-        display: block;
-        margin: 5%;
-        max-width: 80%;
-    }
-    .projInfo {
-        float: left;
-        width: 80%;
-        margin: 0 10%;
-    }
-    #threePic {
-        margin-top: 5%;
-        width: 80%;
-    }
-}
-
-/***
-    When the window size it at its smallest. Changes location of the gallery and
-    projects
-***/
-@media screen and (min-width: 0) and (max-width: 399px) {
-    .gallery {
-        margin: 0 -10%; 
-    }
-    .projectImg {
-        display: block;
-        margin: 5%;
-        max-width: 80%;
-    }
-    .projInfo {
-        float: left;
-        width: 80%;
-        margin: 0 10%;
-    }
-    #threePic {
-        margin-top: 5%;
-        width: 80%;
-    }
-}
