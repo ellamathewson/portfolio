@@ -21,9 +21,7 @@ Updated: October 4th, 2018-->
     <div id="projPage">
 
         <div id="arrows">
-            <p id="up">&uarr;</p>
-            <p id="logo">e</p>
-            <p id="down">&darr;</p>
+            <a id="backToMain">e</p>
         </div>
 
         <nav class="projNav">
@@ -36,170 +34,173 @@ Updated: October 4th, 2018-->
         <div class="projectsGrid">
             <div class="countJS" id="js3">
                 <a href="https://jjheipz24.github.io/ocean-project/index.html">
-                    <img class="projImg" src="media/seaProjectLogo.png" alt="Sea What You Did? Link"></a>
+                    <img class="projIcon" src="media/seaProjectLogo.png" alt="Sea What You Did? Link"></a>
             </div>
 
             <div class="countDesign" id="design5">
-                <a href="https://ellamathewson.github.io/portfolio/DES_8_Tennis/DES_8.html"><img class="projImg" src="media/tennisLogo.png"
+                <a href="https://ellamathewson.github.io/portfolio/DES_8_Tennis/DES_8.html"><img class="projIcon" src="media/tennisLogo.png"
                         alt="Tennis club poster link"></a>
             </div>
 
             <div class="countHTML" id="html2">
-                <a href="#"><img class="projImg" src="media/igmeLogo.png" alt="Class landing page for exercises link"></a>
+                <a href="#"><img class="projIcon" src="media/igmeLogo.png" alt="Class landing page for exercises link"></a>
             </div>
 
             <div class="countJS" id="js1">
-                <a href="#"><img class="projImg" src="media/boogieLogo.png" alt="Boogie Worms interactive game link"></a>
+                <a href="#"><img class="projIcon" src="media/boogieLogo.png" alt="Boogie Worms interactive game link"></a>
             </div>
 
             <div class="countJS" id="js2">
-                <a href="#"><img class="projImg" src="media/huegridLogo.png" alt="Hue grids project link"></a>
+                <a href="#"><img class="projIcon" src="media/huegridLogo.png" alt="Hue grids project link"></a>
             </div>
 
             <div class="countDesign" id="design4">
-                <a href="#"><img class="projImg" src="media/water1Logo.png" alt="Water footprints poster link"></a>
+                <a href="#"><img class="projIcon" src="media/water1Logo.png" alt="Water footprints poster link"></a>
             </div>
 
             <div class="countDesign" id="design3">
-                <a href="#"><img class="projImg" src="media/water2Logo.png" alt="Water cups poster link"></a>
+                <a href="#"><img class="projIcon" src="media/water2Logo.png" alt="Water cups poster link"></a>
             </div>
 
             <div class="countDesign" id="design2">
-                <a href="#.html"><img class="projImg" src="media/water3Logo.png" alt="Water foutain poster link"></a>
+                <a href="#.html"><img class="projIcon" src="media/water3Logo.png" alt="Water foutain poster link"></a>
             </div>
 
             <div class="countDesign" id="design1">
-                <a href="#s.html"><img class="projImg" src="media/alumniLogo.png" alt="Alumni poster project link"></a>
+                <a href="#s.html"><img class="projIcon" src="media/alumniLogo.png" alt="Alumni poster project link"></a>
             </div>
             <div class="countHTML" id="html1">
-                <a href="#l"><img class="projImg" src="media/wearableLogo.png" alt="Wearable devices website link"></a>
+                <a href="#l"><img class="projIcon" src="media/wearableLogo.png" alt="Wearable devices website link"></a>
             </div>
-
 
         </div>
     </div>
 
     <script>
-        window.onload = function() {
-            $("#projPage").fadeIn();
-        }
-
-        function loadProjects() {
-        /* This line of code came from Darius Morawiec on Stack Overflow:
-            https://stackoverflow.com/questions/17833678/count-number-of-img-tags-inside-a-div-tag
-         */
-        let images = document.getElementsByTagName("img");
-        let imgArray = [];
-        for (let i = 0; i < images.Length; i++) {
-            imgArray.push(document.getElementsByTagName("img"));
-        }
-    }
-
-    function filterProjects(buttonID) {
-        let buttonClicked = buttonID;
-
-        console.log(buttonClicked);
-
-        if (buttonClicked == "allLink") {
-            loopDisplay("countJS", "js");
-            loopDisplay("countDesign", "design");
-            loopDisplay("countHTML", "html");
-            $("#up").css({ "visibility": "hidden" });
-            $("#down").css({ "visibility": "visible" });
-        }
-        else if (buttonClicked == "cSharpLink") {
-            loopHide("countJS", "js");
-            loopHide("countDesign", "design");
-            loopHide("countHTML", "html");
-            $("#up").css({ "visibility": "hidden" });
-            $("#down").css({ "visibility": "hidden" });
-        }
-        else if (buttonClicked == "designLink") {
-            loopHide("countJS", "js");
-            loopDisplay("countDesign", "design");
-            loopHide("countHTML", "html");
-            $("#up").css({ "visibility": "hidden" });
-            $("#down").css({ "visibility": "hidden" });
-        }
-        else if (buttonClicked == "htmlLink") {
-            loopHide("countJS", "js");
-            loopHide("countDesign", "design");
-            loopDisplay("countHTML", "html");
-            $("#up").css({ "visibility": "hidden" });
-            $("#down").css({ "visibility": "hidden" });
-        }
-        else if (buttonClicked == "jsLink") {
-            loopDisplay("countJS", "js");
-            loopHide("countDesign", "design");
-            loopHide("countHTML", "html");
-            $("#up").css({ "visibility": "hidden" });
-            $("#down").css({ "visibility": "hidden" });
-        }
-    }
-
-    function loopDisplay(className, projName) {
-        //gets all the elements with the same class
-        let sameClass = document.getElementsByClassName(className);
-        //takes the value of how many elements there are of the class
-        for (let i = 1; i <= sameClass.length; i++) {
-            //sets a local variable equal to the name plus a value
-            //all ids of the projects have a numbered value to them
-            let idName = projName + i;
-            //sends it to displayProjects
-            displayProjects(idName);
-        }
-    }
-
-    function loopHide(className, projName) {
-        let sameClass = document.getElementsByClassName(className);
-        for (let i = 1; i <= sameClass.length; i++) {
-            let idName = projName + i;
-            hideProjects(idName);
-        }
-    }
-
-    function displayProjects(projID) {
-        //changes the display of the div 
-        document.getElementById(projID).style.display = 'block';
-    }
-
-    function hideProjects(projID) {
-        document.getElementById(projID).style.display = 'none';
-    }
-    </script>
-
-<script>
-        /* 
-        SCROLLING AND DISPLAYING ARROWS ON SIDE OF SCREEN
-    
-        Adapted from Nick Craver on Stack Overflow: 
-        https://stackoverflow.com/questions/3898130/check-if-a-user-has-scrolled-to-the-bottom 
-        and from Morgan T. on Stack Overflow:
-        https://stackoverflow.com/questions/17216846/how-check-if-user-is-at-the-top-of-the-html-page
-    
-        */
-    
-        //jquery event on scroll
-        $(window).scroll(function () {
-            //if reaches bottom of the page (added 2 because values were not quite reaching it)
-            if ($(window).scrollTop() + $(window).height() + 2 >= $(document).height()) {
-                //shows up arrow and hides down arrow
-                $("#up").css({ "visibility": "visible" });
-                $("#down").css({ "visibility": "hidden" });
-                //if scroll to the top of page
-            } else if ($(window).scrollTop() === 0) {
-                //up arrow dissapears
-                $("#up").css({ "visibility": "hidden" });
-                $("#down").css({ "visibility": "visible" });
-            } else {
-                //otherwise, both are displayed on screen
-                // $("#up").css({"visibility":"hidden"});
-                // $("#down").css({"visibility":"hidden"});
+        $("#projPage").fadeIn();
+        </script>
+        
+        
+        
+        <script>
+            //for project page
+        
+            function loadProjects() {
+                /* This line of code came from Darius Morawiec on Stack Overflow:
+                    https://stackoverflow.com/questions/17833678/count-number-of-img-tags-inside-a-div-tag
+                 */
+                let images = document.getElementsByTagName("img");
+                let imgArray = [];
+                for (let i = 0; i < images.Length; i++) {
+                    imgArray.push(document.getElementsByTagName("img"));
+                }
             }
-        })
-    
-    </script>
-    
+        
+            function filterProjects(buttonID) {
+                let buttonClicked = buttonID;
+        
+                console.log(buttonClicked);
+        
+                if (buttonClicked == "allLink") {
+                    loopDisplay("countJS", "js");
+                    loopDisplay("countDesign", "design");
+                    loopDisplay("countHTML", "html");
+                    $("#up").css({ "visibility": "hidden" });
+                    $("#down").css({ "visibility": "visible" });
+                }
+                else if (buttonClicked == "cSharpLink") {
+                    loopHide("countJS", "js");
+                    loopHide("countDesign", "design");
+                    loopHide("countHTML", "html");
+                    $("#up").css({ "visibility": "hidden" });
+                    $("#down").css({ "visibility": "hidden" });
+                }
+                else if (buttonClicked == "designLink") {
+                    loopHide("countJS", "js");
+                    loopDisplay("countDesign", "design");
+                    loopHide("countHTML", "html");
+                    $("#up").css({ "visibility": "hidden" });
+                    $("#down").css({ "visibility": "hidden" });
+                }
+                else if (buttonClicked == "htmlLink") {
+                    loopHide("countJS", "js");
+                    loopHide("countDesign", "design");
+                    loopDisplay("countHTML", "html");
+                    $("#up").css({ "visibility": "hidden" });
+                    $("#down").css({ "visibility": "hidden" });
+                }
+                else if (buttonClicked == "jsLink") {
+                    loopDisplay("countJS", "js");
+                    loopHide("countDesign", "design");
+                    loopHide("countHTML", "html");
+                    $("#up").css({ "visibility": "hidden" });
+                    $("#down").css({ "visibility": "hidden" });
+                }
+            }
+        
+            function loopDisplay(className, projName) {
+                //gets all the elements with the same class
+                let sameClass = document.getElementsByClassName(className);
+                //takes the value of how many elements there are of the class
+                for (let i = 1; i <= sameClass.length; i++) {
+                    //sets a local variable equal to the name plus a value
+                    //all ids of the projects have a numbered value to them
+                    let idName = projName + i;
+                    //sends it to displayProjects
+                    displayProjects(idName);
+                }
+            }
+        
+            function loopHide(className, projName) {
+                let sameClass = document.getElementsByClassName(className);
+                for (let i = 1; i <= sameClass.length; i++) {
+                    let idName = projName + i;
+                    hideProjects(idName);
+                }
+            }
+        
+            function displayProjects(projID) {
+                //changes the display of the div 
+                document.getElementById(projID).style.display = 'block';
+            }
+        
+            function hideProjects(projID) {
+                document.getElementById(projID).style.display = 'none';
+            }
+        </script>
+        
+        <script>
+            /* 
+            SCROLLING AND DISPLAYING ARROWS ON SIDE OF SCREEN
+        
+            Adapted from Nick Craver on Stack Overflow: 
+            https://stackoverflow.com/questions/3898130/check-if-a-user-has-scrolled-to-the-bottom 
+            and from Morgan T. on Stack Overflow:
+            https://stackoverflow.com/questions/17216846/how-check-if-user-is-at-the-top-of-the-html-page
+        
+            */
+        
+            //jquery event on scroll
+            $(window).scroll(function () {
+                //if reaches bottom of the page (added 2 because values were not quite reaching it)
+                if ($(window).scrollTop() + $(window).height() + 2 >= $(document).height()) {
+                    //shows up arrow and hides down arrow
+                    $("#up").css({ "visibility": "visible" });
+                    $("#down").css({ "visibility": "hidden" });
+                    //if scroll to the top of page
+                } else if ($(window).scrollTop() === 0) {
+                    //up arrow dissapears
+                    $("#up").css({ "visibility": "hidden" });
+                    $("#down").css({ "visibility": "visible" });
+                } else {
+                    //otherwise, both are displayed on screen
+                    // $("#up").css({"visibility":"hidden"});
+                    // $("#down").css({"visibility":"hidden"});
+                }
+            })
+        
+        </script>
+
 </body>
 
 </html>
