@@ -140,7 +140,7 @@ nav {
 }
 
 
-#arrows {
+ #arrows {
     display: flex;
     flex-direction: column;
 
@@ -150,7 +150,7 @@ nav {
     margin: 2%;
     position: fixed;
     transition: all .2s ease-in-out;
-}
+} 
 
 #logo, #backToMain {
     font-size: 40px;
@@ -311,6 +311,19 @@ hr {
     margin: 1.5em 0;
     padding: 0;
 }
+
+.backToProjects {
+    position: absolute;
+    padding: 0;
+    margin: 1em 0 0 0;
+    font-size: 30px;
+    top: 0;
+}
+
+.backToProjects:hover {
+    cursor: pointer;
+}
+
 
 
 /***
