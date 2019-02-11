@@ -61,7 +61,7 @@ let posY;
 
 function centerCanvas() {
     posX = (windowWidth - width) / 2;
-    posY = ((windowHeight - height) / 2) + 200;
+    posY = ((windowHeight - height) / 2);
     console.log(posX, posY);
     cnv.position(posX, posY);
 }
