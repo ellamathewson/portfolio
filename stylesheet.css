@@ -39,11 +39,20 @@ h1 {
 /***
     Sets font family and size
 ***/
-p {
-    font-family: 'Roboto', sans-serif;
+p, .intextLink {
     font-size: 20px;
     line-height: 40px;
     padding: 1em 0;
+}
+
+.intextLink {
+    padding: 0;
+    display: block;
+}
+
+.intextLink:hover {
+    text-decoration: underline;
+    color: black;
 }
 
 /***
@@ -308,7 +317,7 @@ hr {
 }
 
 .projectImgWide {
-    padding: 1em 0;
+    margin: 10vh 0 0 0;
     padding: 10vh 0 0 0;
     width: 60%;
     height: 20%;
