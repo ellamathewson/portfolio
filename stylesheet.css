@@ -292,6 +292,7 @@ hr {
 .projectPage {
     margin-top: 5rem;
     position: relative;
+    align-content: center;
 }
 
 .gridProject {
@@ -348,6 +349,10 @@ hr {
     margin-top: 200vh;
 }
 
+.aboutPage {
+    display: flex;
+    margin-top: 20%;
+}
 
 
 /***
