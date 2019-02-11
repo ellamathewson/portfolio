@@ -383,6 +383,10 @@ hr {
     margin-top: 5px;
 }
 
+#wearable {
+    width: 80%;
+}
+
 /***
     With the coding projects, the actual program is running on the page. This
     means that the parapgrah needed to be changed to fit on the page as well
