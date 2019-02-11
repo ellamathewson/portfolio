@@ -174,7 +174,7 @@ nav {
     cursor: default;
 }
 
-#logo:hover, #backToMain:hover {
+#logo:hover, #backToMain:hover, .backToProjects:hover {
     cursor: pointer;
     transform: scale(2);
 }
@@ -318,10 +318,6 @@ hr {
     margin: 1em 0 0 0;
     font-size: 30px;
     top: 0;
-}
-
-.backToProjects:hover {
-    cursor: pointer;
 }
 
 
