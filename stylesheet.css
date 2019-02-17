@@ -405,3 +405,30 @@ hr {
     is this size, the number of columns on the main page becomes 1. Along with this, the
     images on the project pages adapt as well.
 ***/
+
+.contactPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactItem p {
+    margin: 20px;
+    padding: 0;
+}
+
+.contactItem a {
+    margin: 20px;
+    cursor: pointer;
+    padding: 0;
+}
+
+i {
+    font-size: 35px;
+}
