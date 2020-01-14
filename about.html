@@ -1,53 +1,83 @@
-<!--Ella Mathewson
-Updated: March 15th, 2018-->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>ella mathewson</title>
+    <!-- 
+        Code adapted from Box Template: 
+        https://themefisher.com/products/box-bootstrap-portfolio-template/
+    -->
 
-    <title>Ella Mathewson</title>
-    <link rel="icon" href="images/webLogo.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- main css -->
+    <link href="css/stylesheet.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Top bar -->
+    <div class="top-bar">
+        <h1>About Me</h1>
+        <!-- nav -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="activeLink">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <!-- end nav -->
+    </div>
+    <!-- end Top bar -->
 
-    <div class="projectPage">
-
-        <div id="arrows">
-            <a id="backToMain" href="https://ellamathewson.github.io/portfolio/">e</a>
+    <!-- Main container -->
+    <div class="container main-container clearfix">
+        <div class="col-md-6">
+            <img src="images/profilePic.jpg" class="img-responsive" alt="" />
         </div>
-
-
-        <div class="aboutPage">
-            <img class="projectImg" src="media/aboutPic2Resize.jpg" alt="That's me!">            
-
-            <div class="textGridContainer" id="aboutPara">
-            <p>Hello! I'm a second year student at Rochester Institute of Technology majoring in New Media Interactive 
-                Development. Using both code and design, I create interactive and immersive experiences. 
+        <div class="col-md-6">
+            <h3 class="uppercase" tabindex="0">Ella Mathewson</h3>
+            <h5 tabindex="0">3rd Year RIT Student</h5>
+            <div class="h-30"></div>
+            <p tabindex="0">
+                Hello! I'm a New Media Intearctive Development student at Rochester Institute of Technology (RIT). Using both 
+                code and design, I love creating interactive programs that immerse the users. Accessibility is also a focus of mine,
+                as the web should be able to be used by everyone. I strive to make this portfolio website as accessibile as possible, 
+                along with any other project I work on.
             </p>
-            <p>
-                Currently I am working with a team to create an app called GenderFree Restroom Locating Service. On RIT's campus,
-                the gender neutral bathrooms are not clearly marked or easy to find. Along with this, RIT's map does not accurately
-                show where they are located. We are working on creating an app to accurately find the family restrooms and gender neutral
-                bathrooms on campus using Unity UI and IndoorAtlas. Along with this, we hope to implement AR into our app as well.
-                Our deadline goal for the completed project is the end of April 2019, as we are going to display our final product at
-                Imagine RIT this year.
+            <div class="h-30"></div>
+            <p tabindex="0">
+                Outside of school I love running, photography, drawing, and going to the beach. I'm originally from Cleveland, Ohio,
+                but I enjoy traveling and experiencing new places. 
             </p>
-            <p>Personally, the projects I am working on mostly involve this website. I hope to keep changing the design and integrating  
-                    new features into the site as I learn more about web development and user experience. One challenge I faced in creating 
-                    this website was with the fading effect from the main screen to the projects page. The jQuery I wrote in order to accomplish 
-                    it was outside of what I had learned, so a lot of my time was spent searching the web for solutions to errors I encountered. 
-                    There are still a few glitches here and there, but overall I'm happy with my result. 
-                </p>
-        </div>
+            <div class="h-30"></div>
+            <p tabindex="0">
+                I'm currently looking for an internship / co-op for the summer of 2020 in the field of web development or UI/UX. 
+            </p>
+            <div class="h-30"></div>
+            <a href="MathewsonResume2020.pdf" target="_">View my resume</a>
 
         </div>
+    </div>
+    <!-- end Main container -->
 
+    <!-- jQuery -->
+    <script src="javascript/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/animated-headline.js"></script>
+    <script src="javascript/isotope.pkgd.min.js"></script>
+
+    <!--  custom script -->
+    <script src="javascript/custom.js"></script>
 </body>
 
 </html>
