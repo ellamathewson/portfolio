@@ -264,6 +264,12 @@ button a {
     text-decoration: none;
 }
 
+article {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 /* Contact
 ==================================================*/
 .formButton {
