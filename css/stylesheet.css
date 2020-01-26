@@ -285,6 +285,18 @@ article {
     margin: 2vh 10vw 2vh 2vw;
 }
 
+.imageDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.blogImg {
+    width: 50%;
+    margin: 2.5% 20%;
+}
+
 /* Contact
 ==================================================*/
 .formButton {
