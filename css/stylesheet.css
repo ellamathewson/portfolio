@@ -1046,6 +1046,9 @@ textarea:focus {
 
 /* single project page
 ==================================================*/
+.projectTitle {
+    margin: 2.5%;
+}
 
 .cat-ul {
     padding-left: 0;
