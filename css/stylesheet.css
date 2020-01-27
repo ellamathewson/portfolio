@@ -194,6 +194,35 @@ h5 {
 
 /* nav
 ==================================================*/
+.navbar-toggle {
+    border: none;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: white;
+}
+
+.navbar-header {
+    margin: 0;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #ffd556;
+    color: black;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: black;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: black;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
 nav {
     margin-top: 10vh;
     display: flex;
@@ -201,15 +230,28 @@ nav {
     justify-content: center;
 }
 
-nav a {
-    padding: 1vh 5vw;
-    color: #333;
+.navbar {
+    background: none;
+    border: none;
 }
 
-nav a:hover, button:hover {
+.navLink {
+    padding: 1vh 5vw;
+    color: black;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li:hover, button:hover {
     text-decoration: none;
     background-color: #ffd556;
     border-radius: 0;
+}
+
+li, ul {
+    text-decoration: none;
 }
 
 .activeLink {
