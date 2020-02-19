@@ -58,6 +58,8 @@
                     Project 1 for Physical Computing and Alternate Interfaces. We were tasked 
                     with using two inputs to control an LED output in a non-trival way. I found the 
                     temperature sensor interesting, so I used that to display the data collected. 
+                    I took inspiration from <a href="https://create.arduino.cc/projecthub/ArduPic/how-to-make-a-supersize-thermometer-with-an-rgb-led-strip-d7bbfa">
+                        Giovanni Carrera's project</a>, where he made an accurate LED thermometer.
                 </p>
             </div>
 
@@ -72,6 +74,12 @@
                     orange, and finally red. At room temperature my room seems to be in the magenta 
                     area, but when I apply heat to the sensor the values change to reflect a yellow 
                     color. 
+                    <br><br>
+                    One challange I faced while trying to implement this display was how to use the values 
+                    the sensor collected and convert them into a way to display the data that made sense. 
+                    I ended up observing what the starting temperature always was when the sensor first 
+                    started off and used that as a baseline. From there, every 10 values was a color change.
+                    Anything below the baseline was the coldest (blue). 
                 </p>
             </div>
 
@@ -99,6 +107,12 @@
                     The second way I displayed the information gathered was through a tick mark 
                     on the LED strip relative to the temperature value. As the temperature increases,
                     so does the number of LEDs displaying on the strip.  
+                    <br><br>
+                    In the same way as the previous display, another challenge here was figuring 
+                    out how to display the numbers collected to relate to the 30 pixels I had 
+                    to work with. Again I looked to the baseline value and subtracted 90 so it 
+                    became a single digit number. From there, any time it changes the LED 
+                    display reflects it accurately.
                 </p>
             </div>
 
@@ -119,6 +133,16 @@
                 <source src="blogImages/tickDisplay.MOV" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
+
+            <div class="para">
+                <p tabindex="0">
+                    In the future I would love to make the tick mark accurate to a degree or
+                    two of the temperature, like the project I took inspiration from. I would 
+                    also love to change from an LED light dipslay to a screen display to 
+                    directly print the temperature collected and just use the LEDs to have a 
+                    color reflect this temperature. 
+                </p>
+            </div>
 
         </article>
     </div>
