@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ella mathewson</title>
+
+    <link rel="icon" href="../images/ellaFavicon.png">
+
+    <!-- 
+        Code adapted from Box Template: 
+        https://themefisher.com/products/box-bootstrap-portfolio-template/
+    -->
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="../css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top bar -->
+    <div class="top-bar">
+            <h1>Blog: Arduino thermometer</h1>
+            <!-- nav -->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../portfolio.html">Portfolio</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- end nav -->
+        </div>
+        <!-- end Top bar -->
+    
+    
+    <!-- main-container -->
+    <div class="container main-container">
+        <article class="col-md-12">
+            <div class="para">
+                <p tabindex="0">
+                    Project 1 for Physical Computing and Alternate Interfaces. We were tasked 
+                    with using two inputs to control an LED output in a non-trival way. I found the 
+                    temperature sensor interesting, so I used that to display the data collected. 
+                </p>
+            </div>
+
+            <div class="imageDiv">
+                <img class="blogImg" tabindex="0" src="blogImages/boardOverview.jpg" alt="Breadboard overview">
+            </div>
+
+            <div class="para">
+                <p tabindex="0">
+                    The first way I displayed the data on the LED strip was through colors.
+                    From lowest temperature to highest the colors changes from blue, magenta, yellow, 
+                    orange, and finally red. At room temperature my room seems to be in the magenta 
+                    area, but when I apply heat to the sensor the values change to reflect a yellow 
+                    color. 
+                </p>
+            </div>
+
+            <div class="sideBySide">
+                <img class="blogImgSide" tabindex="0" src="blogImages/colorDisplayMagenta.jpg" alt="LED strip displaying Magenta">
+                <img class="blogImgSide" tabindex="0" src="blogImages/colorDisplayYellow.jpg" alt="LED strip displaying Yellow">    
+            </div>
+
+            <div class="para">
+                <p tabindex="0">
+                    In this video you can see the color changes as the temperature increases or 
+                    decreases, based on whether I hold my fingers over the sensor or not. It takes 
+                    a lot of heat to get it up to red, but I was able to get it to orange at the very 
+                    end. 
+                </p>
+            </div>
+
+            <video width="400" controls>
+                <source src="blogImages/colorDisplay.MOV" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <div class="para">
+                <p tabindex="0">
+                    The second way I displayed the information gathered was through a tick mark 
+                    on the LED strip relative to the temperature value. As the temperature increases,
+                    so does the number of LEDs displaying on the strip.  
+                </p>
+            </div>
+
+            <div class="imageDiv">
+                <img class="blogImgSide" id="single" tabindex="0" src="blogImages/tickDisplay.jpg" alt="Breadboard overview">
+            </div>
+
+            <div class="para">
+                <p tabindex="0">
+                    To change over to this way of displaying, the user must flip the switch on 
+                    the board. In the video you can see how when my fingers are applying heat to 
+                    the sensor the ticks greatly expand across the strip. When I take my fingers 
+                    off, the ticks dwindle. 
+                </p>
+            </div>
+
+            <video width="400" controls>
+                <source src="blogImages/tickDisplay.MOV" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+        </article>
+    </div>
+    <!-- end main-container -->
+
+    <!-- jQuery -->
+    <script src="../javascript/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="../javascript/bootstrap.min.js"></script>
+    <script src="../javascript/menu.js"></script>
+    <script src="../javascript/animated-headline.js"></script>
+    <script src="../javascript/isotope.pkgd.min.js"></script>
+
+    <!--  custom script -->
+    <script src="../javascript/custom.js"></script>
+</body>
+
+</html>

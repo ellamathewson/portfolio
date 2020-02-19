@@ -83,6 +83,7 @@ a {
 p {
     color: black;
     font-size: 15px;
+    text-align: left;
 }
 
 .inlineLink {
@@ -313,9 +314,21 @@ button a {
     text-decoration: none;
 }
 
+.para {
+    width: 90%;
+    margin: 2.5% 5%;
+}
+
+video {
+    transform:rotate(-90deg);
+    margin: -15% 0;
+}
+
 article {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;
     width: 90%;
     padding: 0;
     margin: 0 5%;
@@ -339,6 +352,28 @@ article {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+}
+
+.sideBySide {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.blogImgSide {
+    width: 40%;
+    margin: 0;
+    transform: rotate(90deg);
+    margin-top: 5%;
+}
+
+#single {
+    width: 50%;
+    margin: 10% 20%;
 }
 
 .blogImg {
