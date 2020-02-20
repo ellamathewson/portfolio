@@ -327,8 +327,8 @@ video {
 article {
     display: flex;
     flex-direction: column;  
-    justify-content: center; 
-    align-items: center;
+    justify-content: left; 
+    align-items: left;
     width: 90%;
     padding: 0;
     margin: 0 5%;
