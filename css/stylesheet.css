@@ -321,7 +321,8 @@ button a {
 
 video {
     transform:rotate(-90deg);
-    margin: -15% 0;
+    width: 30%;
+    margin: -10% 0 -10% 30%;
 }
 
 article {
