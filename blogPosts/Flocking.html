@@ -23,7 +23,7 @@
 <body>
     <!-- Top bar -->
     <div class="top-bar">
-            <h1>Blog: Flocking AR</h1>
+            <h1>Blog: Egg Hunt</h1>
             <!-- nav -->
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
@@ -53,16 +53,63 @@
     <!-- main-container -->
     <div class="container main-container">
         <article class="col-md-12">
-            <p tabindex="0">
-                Exercise for Current Topics in Interactive Development. 
-                In this AR interactive piece we adapted an old project from a previous class 
-                to work in AR. The project uses the Ground Plane to display the terrain on which 
-                an array of chickens flock to a randomized point on the screen while an array of 
-                ducks flock and try to follow the chickens.
-            </p>
+            <p tabindex="0">Posted on February 24, 2020 at 2:13 p.m.</p>
+
+            <div class="para">
+                <p tabindex="0">
+                    Exercise for Current Topics in Interactive Development. 
+                    In this AR interactive piece we adapted an old project from a previous class 
+                    to work in AR. The project uses the Ground Plane to display the terrain on which 
+                    an array of agents flock to an egg, which is randomized on the screen every time they 
+                    come into contact.
+                </p>
+            </div>
 
             <div class="imageDiv">
-                <!-- Insert images-->    
+                <img class="blogImg" tabindex="0" src="blogImages/openingscene.png" alt="Egg Hunt">
+            </div>
+
+            <div class="para">
+                <p tabindex="0">
+                    Upon starting the game the splash screen is displayed, showcasing the prefabs and 
+                    target object. The user is able to click to progress to the main screen, which is 
+                    through the AR camera. By pointing the camera at the ground scene target and clicking,
+                    the scene loads in. 
+                </p>
+            </div>
+
+            <video class="unityVid" width="400" controls>
+                <source src="blogImages/egghuntPlay.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <div class="para">
+                <p tabindex="0">
+                    The chickens are seen flocking towards the egg, which has been instantiated at
+                    a random point in the scene. The ducks are seen moving off the screen. But don't worry,
+                    by clicking the button that says 'ducks' at the top of the screen, they come back in 
+                    and replace the chickens in their hunt after the egg. The same switch happens when 
+                    the user pressed the 'chicken' button. Pressing the 'exit' button stops the 
+                    experience.
+                </p>
+            </div>
+
+            <div class="para">
+                <p tabindex="0">
+                    The prefabs are able to switch out by having the current object they're seeking change. 
+                    When on the screen, they are seeking the egg; when the button is pressed for the other 
+                    prefab, the current one changes to seek an off screen target, whereas the prefabs currently 
+                    seeking the offscreen target change to begin seeking the egg on screen. 
+                </p>
+            </div>
+
+            <div class="para">
+                <p tabindex="0">
+                    I wanted the overall theme to feel like being on a farm, which is why the prefabs 
+                    were both animal related. I also made the terrain by using a dirt material and making 
+                    it slightly transparent. By making it transparent it fixed a small bug of the 
+                    prefabs disappearing beneath the ground plane stage when seeking the egg. 
+                </p>
             </div>
         </article>
     </div>

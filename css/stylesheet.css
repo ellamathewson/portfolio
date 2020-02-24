@@ -319,10 +319,19 @@ button a {
     margin: 2.5% 5%;
 }
 
-video {
+.arduinoVideo {
     transform:rotate(-90deg);
     width: 30%;
     margin: -10% 0 -10% 30%;
+}
+
+.unityVid {
+    width: 80%;
+    margin: 5vh 5vw;
+}
+
+video {
+    
 }
 
 article {
