@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ella mathewson</title>
+
+    <link rel="icon" href="../images/ellaFavicon.png">
+
+    <!-- 
+        Code adapted from Box Template: 
+        https://themefisher.com/products/box-bootstrap-portfolio-template/
+    -->
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="../css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top bar -->
+    <div class="top-bar">
+            <h1>Blog: Arduino Mircophone</h1>
+            <!-- nav -->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../portfolio.html">Portfolio</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- end nav -->
+        </div>
+        <!-- end Top bar -->
+    
+    
+    <!-- main-container -->
+    <div class="container main-container">
+        <article class="col-md-12">
+            <p tabindex="0">Posted on April 2, 2020 at 5:39 p.m.</p>
+
+            <div class="para">
+                <p tabindex="0">
+                    Project 2 for Physical Computing and Alternate Interfaces. For this project 
+                    we used a speaker and a microphone to create an interactive audio expereince. 
+                    I took inspiration from our lecture about the speaker playing tones. I wanted 
+                    to play around with what the tones could create. 
+                </p>
+            </div>
+
+            <div class="imageDiv">
+                <img class="blogImg" tabindex="0" src="blogImages/audioBoard.jpg" alt="Breadboard overview">
+            </div>
+
+            <div class="para">
+                <p tabindex="0">
+                    Adapting code from robsoncouto to play the
+                    <a href="https://github.com/robsoncouto/arduino-songs/blob/master/cantinaband/cantinaband.ino"> Star Wars Cantina Band music
+                    </a> and  <a href="https://github.com/robsoncouto/arduino-songs/blob/master/miichannel/miichannel.ino">
+                    Wii Channel music</a>, I created a work that measures how loudly the sound is through the microphone 
+                    and plays the respective music. 
+                    <br><br>
+                    A small noise, such as breathing on the microphone, plays the Wii music, whereas a louder sound such as a clap 
+                    plays the Cantina Band music, shown below, respetively. 
+                </p>
+            </div>
+
+            <video class="verticalVid" width="400" controls>
+                <source src="blogImages/wii.MOV" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <video class="verticalVid" width="400" controls>
+                <source src="blogImages/cantina.MOV" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <div class="para">
+                <p tabindex="0">
+                    The main problem I ran into was measuring the volume of the noise through the microphone. 
+                    I had to print out to the log in Arduino to see what the base level was and change the values 
+                    for which music to play based off of it. In the future I would love to have more music choices 
+                    with better detection for how loud the noise is, as well as an LED output of some sorts that
+                    aligns with the music. 
+                </p>
+            </div>
+
+
+        </article>
+    </div>
+    <!-- end main-container -->
+
+    <!-- jQuery -->
+    <script src="../javascript/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="../javascript/bootstrap.min.js"></script>
+    <script src="../javascript/menu.js"></script>
+    <script src="../javascript/animated-headline.js"></script>
+    <script src="../javascript/isotope.pkgd.min.js"></script>
+
+    <!--  custom script -->
+    <script src="../javascript/custom.js"></script>
+</body>
+
+</html>

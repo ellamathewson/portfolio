@@ -325,13 +325,13 @@ button a {
     margin: -10% 0 -10% 30%;
 }
 
+.verticalVid {
+    margin: 5vh 0 5vh 30%;
+}
+
 .unityVid {
     width: 80%;
     margin: 5vh 5vw;
-}
-
-video {
-    
 }
 
 article {
