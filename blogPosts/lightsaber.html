@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ella mathewson</title>
+
+    <link rel="icon" href="../images/ellaFavicon.png">
+
+    <!-- 
+        Code adapted from Box Template: 
+        https://themefisher.com/products/box-bootstrap-portfolio-template/
+    -->
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="../css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top bar -->
+    <div class="top-bar">
+            <h1>Blog: Arduino Lightsaber</h1>
+            <!-- nav -->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../portfolio.html">Portfolio</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- end nav -->
+        </div>
+        <!-- end Top bar -->
+    
+    
+    <!-- main-container -->
+    <div class="container main-container">
+        <article class="col-md-12">
+            <p tabindex="0">Posted on May 4, 2020 at 4:47 p.m.</p>
+
+            <!-- <div class="imageDiv">
+                <img class="blogImg" tabindex="0" src="blogImages/audioBoard.jpg" alt="Breadboard overview">
+            </div> -->
+
+            <div class="para">
+                <p tabindex="0">
+                    Final project for Physical Computing and Alternate Interfaces. I decided to create an 
+                    interactive experience with a lightsaber. By using a phone, the user can conncet to the 
+                    bluetooth module located inside the hilt and can turn on and off the ligthsaber, as well
+                    as changing the color of the blade. Why have one colored kyber crystal when you can have them all?
+                    <br><br>
+                    <a class="intextLink" href="https://drive.google.com/file/d/19ZVSNvSEJVrqFxm29vliAkt8BtN7FK9Z/view?usp=sharing">View the final working lightsaber!</a>
+                    <br><br>
+                    I started this project by setting up bluetooth. Using an Arduino Uno, I programmed an LED strip
+                    to change based on certian commands being sent from my phone. Since I have an iOS device, it took
+                    five apps to find the right one that would communicate correctly. The ultimate winner is an app 
+                    called BLE Terminal. 
+                    <br><br>
+                    Upon opening the app, the user selects the bluetooth module they're looking for (in this case, it's named
+                    DS Tech). Once connected, the user has an option of a few buttons on the bottom of the screen, all relating to 
+                    the color of the blade, or to turn it off. By pressing the buttons the lightsaber responds accordingly.
+                    <br><br>
+                </p>
+            </div>
+
+            <div class="imageDiv">
+                <img class="blogImg" tabindex="0" src="blogImages/lightCircuit.jpg" alt="Breadboard overview">
+            </div>
+
+            <div class="para">
+                <p tabindex="0">
+                    After getting the bluetooth and lights set up, the next problem was building the actual lightsaber. Rummaging
+                    around my house I found quite a few spare parts, all which went into creating the ligthsaber. A spare led pipe is 
+                    the hilt, the grip is from an old remote controled tank, the spare scraps of metal on the hilt are from other 
+                    kits and home projects, the cap to the lightsaber at the bottom is an old electrical wire thingy, and the 
+                    long beam inside the plastic tube holding the lights up is an old bar that holds up blinds on windows.
+                    Taking these pieces I spray painted the accent parts gold to create a visually appealing device.  
+                </p>
+            </div>
+
+            <div class="para">
+                <p tabindex="0">
+                    The next challenge I faced was having to run the Nano without it being plugged into the computer. Taking a battery I 
+                    was able to plug it into the breadboard and use to power the entire device. However, the wires coming from the battery 
+                    weren't solid state, but frayed. So I grabbed some extra solid state wires, cut off an inch of the wires coming from 
+                    the battery, and soldered them together so the wires would fit smoothly inside the breadboard. I also added a power
+                    switch inside the device to break the power flowing to the rest of the circuit. I wanted to have it so the switch is 
+                    sticking out of the blade, but unfortuntly I ran out of time.   
+                </p>
+            </div>
+
+            <div class="para">
+                <p tabindex="0">
+                    Along with a power switch, in the future I would also want to improve the rigidity of the blade. Using a flexible, 
+                    clear piping was all I had avaidbale to me. Using the blinds pole does help the pipe and lights stand up straight, 
+                    but it is still a bit more loose than I would have liked. 
+                    <br><br>
+                    I would also want to add sound effects to the ligthsaber. Unfortuntly I didn't have the parts I needed to play an 
+                    audio file, but making the sound effects yourself is also just as fun.    
+                </p>
+            </div>
+
+        </article>
+    </div>
+    <!-- end main-container -->
+
+    <!-- jQuery -->
+    <script src="../javascript/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="../javascript/bootstrap.min.js"></script>
+    <script src="../javascript/menu.js"></script>
+    <script src="../javascript/animated-headline.js"></script>
+    <script src="../javascript/isotope.pkgd.min.js"></script>
+
+    <!--  custom script -->
+    <script src="../javascript/custom.js"></script>
+</body>
+
+</html>
