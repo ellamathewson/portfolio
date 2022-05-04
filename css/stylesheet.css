@@ -61,11 +61,11 @@ body {
 a {
     -webkit-transition: all .3s;
     transition: all .3s;
-    color: #E57A44;
+    color: #7EA3CC;
 }
 
 a:hover {
-    color: #E57A44;
+    color: #7EA3CC;
     text-decoration: underline;
 }
 
@@ -82,7 +82,7 @@ a:hover {
 }
 
 .color {
-    color: #ffd556;
+    color: #0000F5;
     font-size: 11px;
 }
 
@@ -99,7 +99,7 @@ p {
 
 .inlineLink:hover {
     text-decoration: none;
-    background-color: #ffd556;
+    background-color: #0000F5;
 }
 
 .inlineLink:after, .inlineLink:focus {
@@ -125,7 +125,7 @@ h3 {
 }
 
 h5 {
-    color: #ffd556;
+    color: #0000F5;
 }
 
 
@@ -167,7 +167,7 @@ h5 {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #ffd556;
+    background-color: #0000F5;
     opacity: 0.6;
     position: absolute;
     top: 0;
@@ -225,8 +225,8 @@ h5 {
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    background-color: #ffd556;
-    color: black;
+    background-color: #0000F5;
+    color: white;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -234,7 +234,7 @@ h5 {
 }
 
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: black;
+    color: whiteblack;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -264,8 +264,8 @@ nav ul li {
 
 nav ul li:hover, button:hover {
     text-decoration: none;
-    background-color: #ffd556;
-    color: white;
+    background-color: #0000F5;
+    color: white !important;
     border-radius: 0;
 }
 
@@ -274,7 +274,8 @@ li, ul {
 }
 
 .activeLink {
-    background-color: #ffd556;
+    background-color: #0000F5;
+    color: white;
 }
 
 .categories a {
@@ -321,7 +322,7 @@ button a {
 }
 
 .blogLink:hover {
-    background-color: #ffd556;
+    background-color: #0000F5;
     text-decoration: none;
 }
 
@@ -411,8 +412,8 @@ article {
 }
 
 .formButton:hover {
-    background-color: #ffd556;
-    border: 1px solid #ffd556;
+    background-color: #0000F5;
+    border: 1px solid #0000F5;
 }
 
 #form {
@@ -456,7 +457,7 @@ article {
 }
 
 b i:last-child {
-    color: #ffd556 !important;
+    color: #0000F5 !important;
 }
 
 .box-intro h5 {
@@ -732,7 +733,7 @@ b i:last-child {
 
 .portfolio .categories-grid .categories ul li a.active {
     margin-left: 0;
-    background-color: #ffd556;
+    background-color: #0000F5;
     padding: 0px 20px;
     color: white;
     border-radius: 25px;
@@ -899,7 +900,7 @@ footer img {
 
 .no-touch .cd-top:hover,
 .no-touch .cd-top:focus {
-    background-color: #ffd556;
+    background-color: #0000F5;
     opacity: 1;
     color: #fff;
 }
@@ -1061,7 +1062,7 @@ footer img {
 
 .input-contact > span.active,
 .textarea-contact > span.active {
-    color: #ffd556;
+    color: #0000F5;
     font-size: 10px;
     top: 0px;
     left: 5px;
@@ -1082,7 +1083,7 @@ textarea:focus {
     height: 30px;
     width: 30px;
     display: inline-block;
-    background: #ffd556;
+    background: #0000F5;
     text-align: center;
     line-height: 33px;
     margin-right: 10px;
@@ -1096,7 +1097,7 @@ textarea:focus {
 }
 
 .btn-box {
-    background: #ffd556;
+    background: #0000F5;
     padding: 10px 50px;
     border-radius: 0;
     color: #fff;
@@ -1108,7 +1109,7 @@ textarea:focus {
 
 .btn-box:hover,
 .btn-box:focus {
-    background: #ffd556;
+    background: #0000F5;
     color: #fff;
 }
 
@@ -1126,12 +1127,12 @@ textarea:focus {
 
 .cat-ul li i {
     margin-right: 10px;
-    color: #ffd556;
+    color: #0000F5;
 }
 
 #projectBackground {
     clear: both;
-    background-color: #ffd556;
+    background-color: #0000F5;
 }
 
 
